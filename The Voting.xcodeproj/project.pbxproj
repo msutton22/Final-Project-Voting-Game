@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FBBE9421CB573FD00467C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9411CB573FD00467C88 /* AppDelegate.swift */; };
+		3FBBE9441CB573FD00467C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9431CB573FD00467C88 /* ViewController.swift */; };
+		3FBBE9471CB573FD00467C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBE9451CB573FD00467C88 /* Main.storyboard */; };
+		3FBBE9491CB573FD00467C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBE9481CB573FD00467C88 /* Assets.xcassets */; };
+		3FBBE94C1CB573FD00467C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBE94A1CB573FD00467C88 /* LaunchScreen.storyboard */; };
+		3FBBE9571CB573FD00467C88 /* The_VotingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9561CB573FD00467C88 /* The_VotingTests.swift */; };
+		3FBBE9621CB573FD00467C88 /* The_VotingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9611CB573FD00467C88 /* The_VotingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FBBE9531CB573FD00467C88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBBE9361CB573FD00467C88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBBE93D1CB573FD00467C88;
+			remoteInfo = "The Voting";
+		};
+		3FBBE95E1CB573FD00467C88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBBE9361CB573FD00467C88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBBE93D1CB573FD00467C88;
+			remoteInfo = "The Voting";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FBBE93E1CB573FD00467C88 /* The Voting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Voting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBBE9411CB573FD00467C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FBBE9431CB573FD00467C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FBBE9461CB573FD00467C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FBBE9481CB573FD00467C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FBBE94B1CB573FD00467C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FBBE94D1CB573FD00467C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBBE9521CB573FD00467C88 /* The VotingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The VotingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBBE9561CB573FD00467C88 /* The_VotingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_VotingTests.swift; sourceTree = "<group>"; };
+		3FBBE9581CB573FD00467C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBBE95D1CB573FD00467C88 /* The VotingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The VotingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBBE9611CB573FD00467C88 /* The_VotingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_VotingUITests.swift; sourceTree = "<group>"; };
+		3FBBE9631CB573FD00467C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FBBE93B1CB573FD00467C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBBE94F1CB573FD00467C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBBE95A1CB573FD00467C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FBBE9351CB573FD00467C88 = {
+			isa = PBXGroup;
+			children = (
+				3FBBE9401CB573FD00467C88 /* The Voting */,
+				3FBBE9551CB573FD00467C88 /* The VotingTests */,
+				3FBBE9601CB573FD00467C88 /* The VotingUITests */,
+				3FBBE93F1CB573FD00467C88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FBBE93F1CB573FD00467C88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FBBE93E1CB573FD00467C88 /* The Voting.app */,
+				3FBBE9521CB573FD00467C88 /* The VotingTests.xctest */,
+				3FBBE95D1CB573FD00467C88 /* The VotingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FBBE9401CB573FD00467C88 /* The Voting */ = {
+			isa = PBXGroup;
+			children = (
+				3FBBE9411CB573FD00467C88 /* AppDelegate.swift */,
+				3FBBE9431CB573FD00467C88 /* ViewController.swift */,
+				3FBBE9451CB573FD00467C88 /* Main.storyboard */,
+				3FBBE9481CB573FD00467C88 /* Assets.xcassets */,
+				3FBBE94A1CB573FD00467C88 /* LaunchScreen.storyboard */,
+				3FBBE94D1CB573FD00467C88 /* Info.plist */,
+			);
+			path = "The Voting";
+			sourceTree = "<group>";
+		};
+		3FBBE9551CB573FD00467C88 /* The VotingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBBE9561CB573FD00467C88 /* The_VotingTests.swift */,
+				3FBBE9581CB573FD00467C88 /* Info.plist */,
+			);
+			path = "The VotingTests";
+			sourceTree = "<group>";
+		};
+		3FBBE9601CB573FD00467C88 /* The VotingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBBE9611CB573FD00467C88 /* The_VotingUITests.swift */,
+				3FBBE9631CB573FD00467C88 /* Info.plist */,
+			);
+			path = "The VotingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FBBE93D1CB573FD00467C88 /* The Voting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBBE9661CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The Voting" */;
+			buildPhases = (
+				3FBBE93A1CB573FD00467C88 /* Sources */,
+				3FBBE93B1CB573FD00467C88 /* Frameworks */,
+				3FBBE93C1CB573FD00467C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Voting";
+			productName = "The Voting";
+			productReference = 3FBBE93E1CB573FD00467C88 /* The Voting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FBBE9511CB573FD00467C88 /* The VotingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBBE9691CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The VotingTests" */;
+			buildPhases = (
+				3FBBE94E1CB573FD00467C88 /* Sources */,
+				3FBBE94F1CB573FD00467C88 /* Frameworks */,
+				3FBBE9501CB573FD00467C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBBE9541CB573FD00467C88 /* PBXTargetDependency */,
+			);
+			name = "The VotingTests";
+			productName = "The VotingTests";
+			productReference = 3FBBE9521CB573FD00467C88 /* The VotingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FBBE95C1CB573FD00467C88 /* The VotingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBBE96C1CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The VotingUITests" */;
+			buildPhases = (
+				3FBBE9591CB573FD00467C88 /* Sources */,
+				3FBBE95A1CB573FD00467C88 /* Frameworks */,
+				3FBBE95B1CB573FD00467C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBBE95F1CB573FD00467C88 /* PBXTargetDependency */,
+			);
+			name = "The VotingUITests";
+			productName = "The VotingUITests";
+			productReference = 3FBBE95D1CB573FD00467C88 /* The VotingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FBBE9361CB573FD00467C88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Bits Please";
+				TargetAttributes = {
+					3FBBE93D1CB573FD00467C88 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 94YMPFH76C;
+					};
+					3FBBE9511CB573FD00467C88 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 94YMPFH76C;
+						TestTargetID = 3FBBE93D1CB573FD00467C88;
+					};
+					3FBBE95C1CB573FD00467C88 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 94YMPFH76C;
+						TestTargetID = 3FBBE93D1CB573FD00467C88;
+					};
+				};
+			};
+			buildConfigurationList = 3FBBE9391CB573FD00467C88 /* Build configuration list for PBXProject "The Voting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FBBE9351CB573FD00467C88;
+			productRefGroup = 3FBBE93F1CB573FD00467C88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FBBE93D1CB573FD00467C88 /* The Voting */,
+				3FBBE9511CB573FD00467C88 /* The VotingTests */,
+				3FBBE95C1CB573FD00467C88 /* The VotingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FBBE93C1CB573FD00467C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBBE94C1CB573FD00467C88 /* LaunchScreen.storyboard in Resources */,
+				3FBBE9491CB573FD00467C88 /* Assets.xcassets in Resources */,
+				3FBBE9471CB573FD00467C88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBBE9501CB573FD00467C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBBE95B1CB573FD00467C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FBBE93A1CB573FD00467C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBBE9441CB573FD00467C88 /* ViewController.swift in Sources */,
+				3FBBE9421CB573FD00467C88 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBBE94E1CB573FD00467C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBBE9571CB573FD00467C88 /* The_VotingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBBE9591CB573FD00467C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBBE9621CB573FD00467C88 /* The_VotingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FBBE9541CB573FD00467C88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBBE93D1CB573FD00467C88 /* The Voting */;
+			targetProxy = 3FBBE9531CB573FD00467C88 /* PBXContainerItemProxy */;
+		};
+		3FBBE95F1CB573FD00467C88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBBE93D1CB573FD00467C88 /* The Voting */;
+			targetProxy = 3FBBE95E1CB573FD00467C88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FBBE9451CB573FD00467C88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBBE9461CB573FD00467C88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FBBE94A1CB573FD00467C88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBBE94B1CB573FD00467C88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FBBE9641CB573FD00467C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FBBE9651CB573FD00467C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FBBE9671CB573FD00467C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Voting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BHS.The-Voting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3FBBE9681CB573FD00467C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Voting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BHS.The-Voting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3FBBE96A1CB573FD00467C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The VotingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BHS.The-VotingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Voting.app/The Voting";
+			};
+			name = Debug;
+		};
+		3FBBE96B1CB573FD00467C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The VotingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BHS.The-VotingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Voting.app/The Voting";
+			};
+			name = Release;
+		};
+		3FBBE96D1CB573FD00467C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "The VotingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BHS.The-VotingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "The Voting";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3FBBE96E1CB573FD00467C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "The VotingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BHS.The-VotingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "The Voting";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FBBE9391CB573FD00467C88 /* Build configuration list for PBXProject "The Voting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBBE9641CB573FD00467C88 /* Debug */,
+				3FBBE9651CB573FD00467C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBBE9661CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The Voting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBBE9671CB573FD00467C88 /* Debug */,
+				3FBBE9681CB573FD00467C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FBBE9691CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The VotingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBBE96A1CB573FD00467C88 /* Debug */,
+				3FBBE96B1CB573FD00467C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FBBE96C1CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The VotingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBBE96D1CB573FD00467C88 /* Debug */,
+				3FBBE96E1CB573FD00467C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FBBE9361CB573FD00467C88 /* Project object */;
+}
