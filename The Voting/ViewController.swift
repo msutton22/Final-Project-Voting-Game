@@ -9,10 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var p1TextField: UITextField!
 
+    @IBOutlet weak var p2TextField: UITextField!
+    
+    @IBOutlet weak var p3TextField: UITextField!
+    
+    @IBOutlet weak var p4TextField: UITextField!
+    
+    @IBOutlet weak var p5TextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    @IBAction func nextButtonAction(sender: AnyObject) {
     }
 
 }
