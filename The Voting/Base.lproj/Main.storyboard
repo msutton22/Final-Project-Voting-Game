@@ -78,22 +78,37 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-kP-hyH">
                                 <rect key="frame" x="264" y="285" width="46" height="30"/>
                                 <state key="normal" title="P1"/>
+                                <connections>
+                                    <action selector="p1NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="vS7-Wb-74d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-s9-FrE">
                                 <rect key="frame" x="264" y="335" width="46" height="30"/>
                                 <state key="normal" title="P2"/>
+                                <connections>
+                                    <action selector="p2NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="tof-Ce-xL2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daa-Hb-pch">
                                 <rect key="frame" x="264" y="385" width="46" height="30"/>
                                 <state key="normal" title="P3"/>
+                                <connections>
+                                    <action selector="p3NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="puF-AH-8mm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bb-B9-jcq">
                                 <rect key="frame" x="264" y="432" width="46" height="30"/>
                                 <state key="normal" title="P4"/>
+                                <connections>
+                                    <action selector="p4NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="p15-5S-j66"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ak-ir-lc3">
                                 <rect key="frame" x="264" y="484" width="46" height="30"/>
                                 <state key="normal" title="P5"/>
+                                <connections>
+                                    <action selector="p5NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="SF4-tc-nRD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="P1's turn choose a friend and pass on to the next player " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVq-qD-2Lo">
                                 <rect key="frame" x="226" y="196" width="148" height="72"/>
@@ -110,10 +125,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="playerTurnIdentifierLabel" destination="XVq-qD-2Lo" id="VZJ-T4-Vyi"/>
+                        <outlet property="questionLabel" destination="eTR-bM-A2X" id="8nu-fB-1AF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1251" y="334"/>
+            <point key="canvasLocation" x="1823" y="335"/>
         </scene>
     </scenes>
 </document>

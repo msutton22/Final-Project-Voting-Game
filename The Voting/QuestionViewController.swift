@@ -9,12 +9,13 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
-    var questionNumber = Int()
+
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    @IBOutlet weak var playerTurnIdentifierLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
     }
     
     func chooseQuestion() {
@@ -36,4 +37,13 @@ class QuestionViewController: UIViewController {
         }
     }
 
+    @IBAction func p3NameButton(sender: AnyObject) {
+    }
+    
+    @IBAction func p4NameButton(sender: AnyObject) {
+    }
+    
+    @IBAction func p5NameButton(sender: AnyObject) {
+    }
+    
 }
