@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var info = Information()
     @IBOutlet weak var p1TextField: UITextField!
 
     @IBOutlet weak var p2TextField: UITextField!
@@ -31,12 +32,13 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! QuestionViewController
+        dvc.info = self.info
     }
 
-        }
+
 
     
-
+}
 
 
 

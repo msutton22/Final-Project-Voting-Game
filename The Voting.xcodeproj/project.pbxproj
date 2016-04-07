@@ -15,6 +15,7 @@
 		3FBBE94C1CB573FD00467C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBE94A1CB573FD00467C88 /* LaunchScreen.storyboard */; };
 		3FBBE9571CB573FD00467C88 /* The_VotingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9561CB573FD00467C88 /* The_VotingTests.swift */; };
 		3FBBE9621CB573FD00467C88 /* The_VotingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9611CB573FD00467C88 /* The_VotingUITests.swift */; };
+		3FBBE9701CB6CF5E00467C88 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE96F1CB6CF5E00467C88 /* Information.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FBBE95D1CB573FD00467C88 /* The VotingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The VotingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBBE9611CB573FD00467C88 /* The_VotingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_VotingUITests.swift; sourceTree = "<group>"; };
 		3FBBE9631CB573FD00467C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBBE96F1CB6CF5E00467C88 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				3FBBE9411CB573FD00467C88 /* AppDelegate.swift */,
 				3FBBE9431CB573FD00467C88 /* ViewController.swift */,
+				3FBBE96F1CB6CF5E00467C88 /* Information.swift */,
 				3F4BB7FC1CB6C7B800339533 /* QuestionViewController.swift */,
 				3FBBE9451CB573FD00467C88 /* Main.storyboard */,
 				3FBBE9481CB573FD00467C88 /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			files = (
 				3FBBE9441CB573FD00467C88 /* ViewController.swift in Sources */,
 				3FBBE9421CB573FD00467C88 /* AppDelegate.swift in Sources */,
+				3FBBE9701CB6CF5E00467C88 /* Information.swift in Sources */,
 				3F4BB7FD1CB6C7B800339533 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
