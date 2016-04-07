@@ -28,6 +28,11 @@ class QuestionViewController: UIViewController {
             //answers
         case 2:
             //questionLabel.text ="Who has gotten the most upset while playing Monopoly?"
+        case 3:
+            //questionLabel.text = "Most Likely To Move Out Of The Country"
+        case 4:
+            //questionLabel.text = "Who is most likely to become a reality TV star?"
+        case 5 //questionLabel.text = "Who is the biggest flirt?"
         }
     }
 
