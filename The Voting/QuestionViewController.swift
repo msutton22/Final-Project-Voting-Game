@@ -10,6 +10,7 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
+    var info = Information()
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var playerTurnIdentifierLabel: UILabel!
