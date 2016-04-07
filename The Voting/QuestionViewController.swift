@@ -16,6 +16,7 @@ class QuestionViewController: UIViewController {
     
         override func viewDidLoad() {
         super.viewDidLoad()
+            questionLabel.text = String(info.questions)
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
