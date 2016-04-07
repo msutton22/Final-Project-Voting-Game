@@ -20,7 +20,14 @@ class QuestionViewController: UIViewController {
     func chooseQuestion() {
        questionNumber = Int(arc4random())
         switch questionNumber {
-        default: 0
+        case 0:
+            //questionLabel.text = "Who would have the hardest time talking their way out of an insane asylum?"
+            //answers
+        case 1:
+            //questionLabel.text = "Who will get convicted of a crime they didn't commit?"
+            //answers
+        case 2:
+            //questionLabel.text ="Who has gotten the most upset while playing Monopoly?"
         }
     }
 
