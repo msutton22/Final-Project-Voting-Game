@@ -39,8 +39,7 @@ func chooseQuestion() {
     switch questionNumber {
     case 0:
     questionLabel.text = "Who would have the hardest time talking their way out of an insane asylum?"
-    //answer1Button.setTitle(player1TextField.text, forState: UIControlState)
-   
+    //answer choices
     case 1:
     questionLabel.text = "Who will get convicted of a crime they didn't commit?"
     case 2:
