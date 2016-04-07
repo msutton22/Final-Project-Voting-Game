@@ -63,10 +63,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="PZv-Ij-EQl">
             <objects>
-                <viewController id="LQI-02-t2M" sceneMemberID="viewController">
+                <viewController id="LQI-02-t2M" customClass="QuestionViewController" customModule="The_Voting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u82-hT-uXS"/>
                         <viewControllerLayoutGuide type="bottom" id="XzH-54-WgN"/>
@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1993" y="351"/>
+            <point key="canvasLocation" x="1251" y="334"/>
         </scene>
     </scenes>
 </document>
