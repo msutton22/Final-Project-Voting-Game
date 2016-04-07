@@ -9,19 +9,28 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
-    var questionNumber = Int()
+
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    @IBOutlet weak var playerTurnIdentifierLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
     }
     
-    func chooseQuestion() {
-       questionNumber = Int(arc4random())
-        switch questionNumber {
-        default: 0
-        }
+    @IBAction func p1NameButton(sender: AnyObject) {
+    }
+    
+    @IBAction func p2NameButton(sender: AnyObject) {
     }
 
+    @IBAction func p3NameButton(sender: AnyObject) {
+    }
+    
+    @IBAction func p4NameButton(sender: AnyObject) {
+    }
+    
+    @IBAction func p5NameButton(sender: AnyObject) {
+    }
+    
 }
