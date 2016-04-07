@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -125,11 +125,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="answer1Button" destination="JF5-kP-hyH" id="OUY-f1-SyJ"/>
-                        <outlet property="answer2Button" destination="cdu-s9-FrE" id="clU-Ai-Tu9"/>
-                        <outlet property="answer3Button" destination="daa-Hb-pch" id="FJL-9J-e1I"/>
-                        <outlet property="answer4Button" destination="2Bb-B9-jcq" id="E0Q-UP-cMk"/>
-                        <outlet property="answer5Button" destination="6Ak-ir-lc3" id="dNY-LY-bKl"/>
                         <outlet property="playerTurnIdentifierLabel" destination="XVq-qD-2Lo" id="VZJ-T4-Vyi"/>
                         <outlet property="questionLabel" destination="eTR-bM-A2X" id="8nu-fB-1AF"/>
                     </connections>
