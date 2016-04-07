@@ -28,6 +28,12 @@ class ViewController: UIViewController {
                 performSegueWithIdentifier("titleToQuestions", sender: self)
                 }
             }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! QuestionViewController
+        dvc.myMadLib2 = myMadLib1
+    }
+
         }
 
     
