@@ -9,7 +9,8 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
-    var questionNumber = Int32()
+    var questionNumber = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,11 +18,9 @@ class QuestionViewController: UIViewController {
     }
     
     func chooseQuestion() {
-        questionNumber = arc4random() % 5
-        
+       questionNumber = Int(arc4random())
         switch questionNumber {
-        case 0 :
-            
+        default: 0
         }
     }
 
