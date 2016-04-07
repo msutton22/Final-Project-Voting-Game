@@ -24,16 +24,14 @@ class ViewController: UIViewController {
         
     }
     @IBAction func nextButtonAction(sender: AnyObject) {
-        if p1TextField.text?.characters.count != 0 {
-            if p2TextField.text?.characters.count  != 0 {
-                if p3TextField.text?.characters.count != 0 {
-                   performSegueWithIdentifier("titleToQuestions", sender: self)
+        if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 {
+                performSegueWithIdentifier("titleToQuestions", sender: self)
                 }
             }
         }
-    }
+
     
 
 
-}
+
 
