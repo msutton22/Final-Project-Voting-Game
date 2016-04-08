@@ -49,8 +49,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-FL-evJ">
-                                <rect key="frame" x="88" y="258" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="88" y="258" width="136" height="30"/>
+                                <state key="normal" title="ABOUT THIS GAME"/>
+                                <connections>
+                                    <segue destination="hVP-E9-dEP" kind="presentation" id="s61-8q-cPe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -66,6 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="288" y="319"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NsH-yr-Bvp">
@@ -78,12 +82,22 @@
                     <view key="view" contentMode="scaleToFill" id="Mnm-eB-Luq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
+                                <rect key="frame" x="163" y="195" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">CREATED BY BITS PLEASE Instructions: Enter the names of 3-5 people. Next you will be presented a question in which all of you will have to choose among your friends who fits the scenario present</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dVb-ne-wHV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsh-rR-Nmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="319"/>
+            <point key="canvasLocation" x="1768" y="319"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="PZv-Ij-EQl">
@@ -160,6 +174,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288" y="1049"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ult-zU-z2K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hVP-E9-dEP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LhP-nr-xFi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bls-1Y-Cff" kind="relationship" relationship="rootViewController" id="Us3-8f-Rua"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8V-1O-fWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="319"/>
         </scene>
     </scenes>
 </document>
