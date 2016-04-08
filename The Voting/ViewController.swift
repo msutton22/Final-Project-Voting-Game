@@ -28,11 +28,7 @@ class ViewController: UIViewController {
         if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 {
                 performSegueWithIdentifier("titleToQuestions", sender: self)
                 }
-        p1TextField.resignFirstResponder()
-        p2TextField.resignFirstResponder()
-        p3TextField.resignFirstResponder()
-        p4TextField.resignFirstResponder()
-        p5TextField.resignFirstResponder()            }
+                    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! QuestionViewController
