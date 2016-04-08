@@ -33,7 +33,27 @@ class QuestionViewController: UIViewController {
     
     @IBAction func p5NameButton(sender: AnyObject) {
     }
+    func playerColor() {
+        if playerTurnIdentifierLabel.text == info.player1 {
+            view.backgroundColor = UIColor.greenColor()
+        }
+        else if playerTurnIdentifierLabel.text == info.player2 {
+            view.backgroundColor = UIColor.blueColor()
+        }
+        else if playerTurnIdentifierLabel.text == info.player3 {
+            view.backgroundColor = UIColor.redColor()
+        }
+        else if playerTurnIdentifierLabel.text == info.player4 {
+            view.backgroundColor = UIColor.yellowColor()
+        }
+        else if playerTurnIdentifierLabel.text == info.player5 {
+            view.backgroundColor = UIColor.purpleColor()
+        }
+        
+    }
+    
+}
 
-   }
+
  
 
