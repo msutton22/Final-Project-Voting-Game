@@ -10,9 +10,15 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
-    var info = Information()
+
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var playerTurnIdentifierLabel: UILabel!
+    @IBOutlet weak var player1Button: UIButton!
+    @IBOutlet weak var player2Button: UIButton!
+    @IBOutlet weak var player3Button: UIButton!
+    @IBOutlet weak var player4button: UIButton!
+    @IBOutlet weak var player5Button: UIButton!
+    var info = Information()
     
         override func viewDidLoad() {
         super.viewDidLoad()
