@@ -19,6 +19,12 @@ class QuestionViewController: UIViewController {
             questionLabel.text = String(info.questions)
     }
     
+    @IBAction func p1NameButton(sender: AnyObject) {
+    }
+    
+    @IBAction func p2NameButton(sender: AnyObject) {
+    }
+    
     @IBAction func p3NameButton(sender: AnyObject) {
     }
     
