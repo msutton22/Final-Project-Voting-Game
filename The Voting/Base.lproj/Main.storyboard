@@ -76,17 +76,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-kP-hyH">
-                                <rect key="frame" x="264" y="285" width="46" height="30"/>
+                                <rect key="frame" x="264" y="285" width="46" height="42"/>
                                 <state key="normal" title="P1"/>
                                 <connections>
-                                    <action selector="p1NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="vS7-Wb-74d"/>
+                                    <action selector="p1NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="kGc-cK-wb1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-s9-FrE">
                                 <rect key="frame" x="264" y="335" width="46" height="30"/>
                                 <state key="normal" title="P2"/>
                                 <connections>
-                                    <action selector="p2NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="tof-Ce-xL2"/>
+                                    <action selector="p2NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="NpZ-lG-vX4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daa-Hb-pch">

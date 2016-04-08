@@ -18,6 +18,12 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func p1NameButton(sender: AnyObject) {
+    }
+    
+    @IBAction func p2NameButton(sender: AnyObject) {
+    }
+    
     @IBAction func p3NameButton(sender: AnyObject) {
     }
     
