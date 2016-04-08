@@ -33,6 +33,7 @@ class QuestionViewController: UIViewController {
     
     @IBAction func p5NameButton(sender: AnyObject) {
     }
+    
     func playerColor() {
         if playerTurnIdentifierLabel.text == info.player1 {
             view.backgroundColor = UIColor.greenColor()
