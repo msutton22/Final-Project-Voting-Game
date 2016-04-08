@@ -22,22 +22,38 @@ class QuestionViewController: UIViewController {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-            questionLabel.text = String(info.questions)
+        questionLabel.text = String(info.questions)
+        player1Button.setTitle(info.player1, forState: UIControlState.Normal)
+            player1Button.titleLabel?.backgroundColor = UIColor.blackColor()
+        player2Button.setTitle(info.player2, forState: UIControlState.Normal)
+            player2Button.titleLabel?.backgroundColor = UIColor.blackColor()
+        player3Button.setTitle(info.player3, forState: UIControlState.Normal)
+            player3Button.titleLabel?.backgroundColor = UIColor.blackColor()
+        player4button.setTitle(info.player4, forState: UIControlState.Normal)
+            player4button.titleLabel?.backgroundColor = UIColor.blackColor()
+        player5Button.setTitle(info.player5, forState: UIControlState.Normal)
+            player5Button.titleLabel?.backgroundColor = UIColor.blackColor()
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
+        playerColor()
+        
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
+        playerColor()
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
+        playerColor()
     }
-    
+
     @IBAction func p4NameButton(sender: AnyObject) {
+        playerColor()
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
+        playerColor()
     }
     
     func playerColor() {
