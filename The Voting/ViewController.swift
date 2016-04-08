@@ -26,6 +26,11 @@ class ViewController: UIViewController {
     }
     @IBAction func nextButtonAction(sender: AnyObject) {
         if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 {
+            p1TextField.text = info.player1
+            p2TextField.text = info.player2
+            p3TextField.text = info.player3
+            p4TextField.text = info.player4
+            p5TextField.text = info.player5
                 performSegueWithIdentifier("titleToQuestions", sender: self)
                 }
                     }
