@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -126,6 +126,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="player1Button" destination="JF5-kP-hyH" id="xdZ-Ir-DRg"/>
+                        <outlet property="player2Button" destination="cdu-s9-FrE" id="nH5-s4-ea2"/>
+                        <outlet property="player3Button" destination="daa-Hb-pch" id="U2z-XG-Qc5"/>
+                        <outlet property="player4button" destination="2Bb-B9-jcq" id="L6c-he-aBO"/>
+                        <outlet property="player5Button" destination="6Ak-ir-lc3" id="gDA-Mj-RUC"/>
                         <outlet property="playerTurnIdentifierLabel" destination="XVq-qD-2Lo" id="VZJ-T4-Vyi"/>
                         <outlet property="questionLabel" destination="eTR-bM-A2X" id="8nu-fB-1AF"/>
                     </connections>
