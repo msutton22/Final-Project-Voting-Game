@@ -46,7 +46,6 @@
                                 <state key="normal" title="NEXT"/>
                                 <connections>
                                     <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAc-Wa-6an"/>
-                                    <segue destination="LQI-02-t2M" kind="show" identifier="titleToQuestions" id="lgB-TJ-Utp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,6 +57,7 @@
                         <outlet property="p3TextField" destination="dgt-8x-gEN" id="vpl-QA-h7R"/>
                         <outlet property="p4TextField" destination="ftP-IA-0Pj" id="XFS-3i-qsj"/>
                         <outlet property="p5TextField" destination="wjj-vc-AQx" id="Evh-Yu-bKh"/>
+                        <segue destination="LQI-02-t2M" kind="show" identifier="titleToQuestions" id="NH1-D2-7n5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="334"/>
+            <point key="canvasLocation" x="1286" y="353"/>
         </scene>
     </scenes>
 </document>
