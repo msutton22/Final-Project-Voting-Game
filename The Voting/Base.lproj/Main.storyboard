@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -8,51 +8,54 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Voting" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBk-nQ-H1S">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2's Name" textAlignment="natural" minimumFontSize="17" id="qBk-nQ-H1S">
                                 <rect key="frame" x="30" y="113" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 3's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgt-8x-gEN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 3's Name" textAlignment="natural" minimumFontSize="17" id="dgt-8x-gEN">
                                 <rect key="frame" x="30" y="174" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 4's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftP-IA-0Pj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 4's Name" textAlignment="natural" minimumFontSize="17" id="ftP-IA-0Pj">
                                 <rect key="frame" x="153" y="50" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZa-Ad-QKp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1's Name" textAlignment="natural" minimumFontSize="17" id="VZa-Ad-QKp">
                                 <rect key="frame" x="30" y="50" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 5's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjj-vc-AQx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 5's Name" textAlignment="natural" minimumFontSize="17" id="wjj-vc-AQx">
                                 <rect key="frame" x="153" y="113" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykL-TT-Vfr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ykL-TT-Vfr">
                                 <rect key="frame" x="178" y="174" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
                                     <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAc-Wa-6an"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-FL-evJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bBJ-FL-evJ">
                                 <rect key="frame" x="88" y="258" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ABOUT THIS GAME"/>
                                 <connections>
-                                    <segue destination="hVP-E9-dEP" kind="presentation" id="s61-8q-cPe"/>
+                                    <segue destination="hVP-E9-dEP" kind="modal" id="s61-8q-cPe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,27 +67,24 @@
                         <outlet property="p3TextField" destination="dgt-8x-gEN" id="vpl-QA-h7R"/>
                         <outlet property="p4TextField" destination="ftP-IA-0Pj" id="XFS-3i-qsj"/>
                         <outlet property="p5TextField" destination="wjj-vc-AQx" id="Evh-Yu-bKh"/>
-                        <segue destination="LQI-02-t2M" kind="show" identifier="titleToQuestions" id="NH1-D2-7n5"/>
+                        <segue destination="LQI-02-t2M" kind="modal" identifier="titleToQuestions" id="NH1-D2-7n5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="319"/>
+            <point key="canvasLocation" x="153.59999999999999" y="301.98666666666668"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NsH-yr-Bvp">
             <objects>
                 <viewController id="bls-1Y-Cff" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dCv-pp-0Sy"/>
-                        <viewControllerLayoutGuide type="bottom" id="OZP-iY-dQB"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mnm-eB-Luq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
-                                <rect key="frame" x="163" y="195" width="240" height="149"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="Zqg-sE-2Z5">
+                                <rect key="frame" x="45" y="209" width="240" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">CREATED BY BITS PLEASE Instructions: Enter the names of 3-5 people. Next you will be presented a question in which all of you will have to choose among your friends who best fits the scenario given. After each player has voted the results will appear. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -97,62 +97,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsh-rR-Nmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768" y="319"/>
+            <point key="canvasLocation" x="942.93333333333328" y="301.98666666666668"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="PZv-Ij-EQl">
             <objects>
                 <viewController id="LQI-02-t2M" customClass="QuestionViewController" customModule="The_Voting" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="u82-hT-uXS"/>
-                        <viewControllerLayoutGuide type="bottom" id="XzH-54-WgN"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WWr-h1-Sgc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="P1's turn choose a friend and pass on to the next player " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVq-qD-2Lo">
-                                <rect key="frame" x="146" y="77" width="283" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P1's turn choose a friend and pass on to the next player " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XVq-qD-2Lo">
+                                <rect key="frame" x="28" y="97" width="283" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="QUESTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTR-bM-A2X">
-                                <rect key="frame" x="229" y="48" width="98" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eTR-bM-A2X">
+                                <rect key="frame" x="111" y="48" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-kP-hyH">
-                                <rect key="frame" x="229" y="177" width="104" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JF5-kP-hyH">
+                                <rect key="frame" x="98" y="189" width="104" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="P1"/>
                                 <connections>
                                     <action selector="p1NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="kGc-cK-wb1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-s9-FrE">
-                                <rect key="frame" x="223" y="227" width="104" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cdu-s9-FrE">
+                                <rect key="frame" x="98" y="251" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="P2"/>
                                 <connections>
                                     <action selector="p2NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="NpZ-lG-vX4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daa-Hb-pch">
-                                <rect key="frame" x="223" y="277" width="104" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="daa-Hb-pch">
+                                <rect key="frame" x="105" y="303" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="P3"/>
                                 <connections>
                                     <action selector="p3NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="puF-AH-8mm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bb-B9-jcq">
-                                <rect key="frame" x="229" y="324" width="89" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Bb-B9-jcq">
+                                <rect key="frame" x="105" y="369" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="P4"/>
                                 <connections>
                                     <action selector="p4NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="p15-5S-j66"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ak-ir-lc3">
-                                <rect key="frame" x="223" y="362" width="95" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Ak-ir-lc3">
+                                <rect key="frame" x="102" y="422" width="95" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="P5"/>
                                 <connections>
                                     <action selector="p5NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="SF4-tc-nRD"/>
@@ -160,15 +163,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="daa-Hb-pch" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="6NY-oY-tCg"/>
-                            <constraint firstItem="eTR-bM-A2X" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="6gL-QC-9gB"/>
-                            <constraint firstItem="2Bb-B9-jcq" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="EMW-Y8-Mes"/>
-                            <constraint firstItem="XVq-qD-2Lo" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="N2H-1y-vpg"/>
-                            <constraint firstItem="6Ak-ir-lc3" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="Y4o-5K-9c3"/>
-                            <constraint firstItem="JF5-kP-hyH" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="aS5-3P-ypH"/>
-                            <constraint firstItem="cdu-s9-FrE" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="vht-uz-bNs"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="player1Button" destination="JF5-kP-hyH" id="xdZ-Ir-DRg"/>
@@ -182,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="1049"/>
+            <point key="canvasLocation" x="153.59999999999999" y="993.05333333333328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ult-zU-z2K">
@@ -200,7 +194,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8V-1O-fWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="319"/>
+            <point key="canvasLocation" x="557.86666666666667" y="301.98666666666668"/>
         </scene>
     </scenes>
 </document>

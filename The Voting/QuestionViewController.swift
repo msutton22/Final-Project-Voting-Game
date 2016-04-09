@@ -18,6 +18,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var player3Button: UIButton!
     @IBOutlet weak var player4button: UIButton!
     @IBOutlet weak var player5Button: UIButton!
+    
     var info = Information()
     
         override func viewDidLoad() {

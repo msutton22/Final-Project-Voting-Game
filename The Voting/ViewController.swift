@@ -9,16 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var info = Information()
+    
     @IBOutlet weak var p1TextField: UITextField!
-
     @IBOutlet weak var p2TextField: UITextField!
-    
     @IBOutlet weak var p3TextField: UITextField!
-    
     @IBOutlet weak var p4TextField: UITextField!
-    
     @IBOutlet weak var p5TextField: UITextField!
+    
+    var info = Information()
     
     override func viewDidLoad() {
         super.viewDidLoad()
