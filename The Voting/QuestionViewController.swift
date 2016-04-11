@@ -23,19 +23,17 @@ class QuestionViewController: UIViewController {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-            
-        questionLabel.text = String(info.questions)
-            
-        player1Button.setTitle("\(info.player1)", forState: UIControlState.Normal)
-        player2Button.setTitle("\(info.player2)", forState: UIControlState.Normal)
-        player3Button.setTitle("\(info.player3)", forState: UIControlState.Normal)
-        player4button.setTitle("\(info.player4)", forState: UIControlState.Normal)
-        player5Button.setTitle("\(info.player5)", forState: UIControlState.Normal)
+        chooseQuestion()
+        player1Button.setTitle(info.player1, forState: UIControlState.Normal)
+        player2Button.setTitle(info.player2, forState: UIControlState.Normal)
+        player3Button.setTitle(info.player3, forState: UIControlState.Normal)
+        player4button.setTitle(info.player4, forState: UIControlState.Normal)
+        player5Button.setTitle(info.player5, forState: UIControlState.Normal)
+    
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
         playerColor()
-        
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
@@ -70,7 +68,11 @@ class QuestionViewController: UIViewController {
         else if playerTurnIdentifierLabel.text == info.player5 {
             view.backgroundColor = UIColor.purpleColor()
         }
-        
+    }
+  
+    func chooseQuestion() {
+    let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
+    questionLabel.text = String(info.questions[randomIndex])
     }
     
 }
