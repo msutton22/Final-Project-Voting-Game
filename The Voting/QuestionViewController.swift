@@ -20,53 +20,66 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var player5Button: UIButton!
     
     var info = Information()
+    var playerTurn = 1
     
         override func viewDidLoad() {
         super.viewDidLoad()
+            player1Button.setTitle(info.player1, forState: UIControlState.Normal)
+            player2Button.setTitle(info.player2, forState: UIControlState.Normal)
+            player3Button.setTitle(info.player3, forState: UIControlState.Normal)
+            player4button.setTitle(info.player4, forState: UIControlState.Normal)
+            player5Button.setTitle(info.player5, forState: UIControlState.Normal)
         chooseQuestion()
-        player1Button.setTitle(info.player1, forState: UIControlState.Normal)
-        player2Button.setTitle(info.player2, forState: UIControlState.Normal)
-        player3Button.setTitle(info.player3, forState: UIControlState.Normal)
-        player4button.setTitle(info.player4, forState: UIControlState.Normal)
-        player5Button.setTitle(info.player5, forState: UIControlState.Normal)
-    
+        playerColor()
+        
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
         playerColor()
+        +playerTurn
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
         playerColor()
+        +playerTurn
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         playerColor()
+        +playerTurn
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
         playerColor()
+        +playerTurn
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         playerColor()
+        +playerTurn
     }
     
     func playerColor() {
-        if playerTurnIdentifierLabel.text == info.player1 {
+        
+        if playerTurn == 1 {
             view.backgroundColor = UIColor.greenColor()
+            playerTurnIdentifierLabel.text = "Player 1's turn"
         }
-        else if playerTurnIdentifierLabel.text == info.player2 {
+        else if playerTurn == 2 {
             view.backgroundColor = UIColor.blueColor()
+            playerTurnIdentifierLabel.text = "Player 2's turn"
         }
-        else if playerTurnIdentifierLabel.text == info.player3 {
+        else if playerTurn == 3 {
             view.backgroundColor = UIColor.redColor()
+            playerTurnIdentifierLabel.text = "Player 3's turn"
         }
-        else if playerTurnIdentifierLabel.text == info.player4 {
+        else if playerTurn == 4 {
             view.backgroundColor = UIColor.yellowColor()
+            playerTurnIdentifierLabel.text = "Player 4's turn"
         }
-        else if playerTurnIdentifierLabel.text == info.player5 {
+        else if playerTurn == 5 {
             view.backgroundColor = UIColor.purpleColor()
+            playerTurnIdentifierLabel.text = "Player 5's turn"
         }
     }
   
