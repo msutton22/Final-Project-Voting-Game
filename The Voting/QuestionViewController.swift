@@ -23,7 +23,7 @@ class QuestionViewController: UIViewController {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = String(info.questions)
+        chooseQuestion()
         player1Button.setTitle(info.player1, forState: UIControlState.Normal)
         player2Button.setTitle(info.player2, forState: UIControlState.Normal)
         player3Button.setTitle(info.player3, forState: UIControlState.Normal)
@@ -34,7 +34,6 @@ class QuestionViewController: UIViewController {
     
     @IBAction func p1NameButton(sender: AnyObject) {
         playerColor()
-        
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
@@ -69,7 +68,11 @@ class QuestionViewController: UIViewController {
         else if playerTurnIdentifierLabel.text == info.player5 {
             view.backgroundColor = UIColor.purpleColor()
         }
-        
+    }
+  
+    func chooseQuestion() {
+    let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
+    questionLabel.text = String(info.questions[randomIndex])
     }
     
 }
