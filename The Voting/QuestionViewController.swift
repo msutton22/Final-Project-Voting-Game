@@ -36,27 +36,32 @@ class QuestionViewController: UIViewController {
     
     @IBAction func p1NameButton(sender: AnyObject) {
         playerColor()
-        +playerTurn
+        ++playerTurn
+        results()
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
         playerColor()
-        +playerTurn
+        ++playerTurn
+        results()
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         playerColor()
-        +playerTurn
+        ++playerTurn
+        results()
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
         playerColor()
-        +playerTurn
+        ++playerTurn
+        results()
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         playerColor()
-        +playerTurn
+        ++playerTurn
+        results()
     }
     
     func playerColor() {
@@ -88,8 +93,22 @@ class QuestionViewController: UIViewController {
     questionLabel.text = String(info.questions[randomIndex])
     }
     
-}
+    func results() {
+        if playerTurn == 6 {
+        let alert = UIAlertController(title: "Winner \(info.player2)", message: nil, preferredStyle: .Alert)
+            let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
+                self.resetGame()
+            }
+            
+        }
+    }
+    
+    func resetGame() {
+        playerTurn = 1
+        view.backgroundColor = UIColor.whiteColor()
+        
+    }
+    
+ }
 
-
- 
 
