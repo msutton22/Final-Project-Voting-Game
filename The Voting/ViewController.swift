@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             let dvc = segue.destinationViewController as! QuestionViewController
             dvc.info = self.info
         }
-            /// HELP 
+            
         else {
             let dvc = segue.destinationViewController as! InstructionsViewController
             dvc.info = self.info
