@@ -54,9 +54,6 @@
                                 <rect key="frame" x="88" y="258" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ABOUT THIS GAME"/>
-                                <connections>
-                                    <segue destination="hVP-E9-dEP" kind="modal" id="s61-8q-cPe"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -177,24 +174,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="153.59999999999999" y="993.05333333333328"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ult-zU-z2K">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hVP-E9-dEP" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LhP-nr-xFi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bls-1Y-Cff" kind="relationship" relationship="rootViewController" id="Us3-8f-Rua"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d8V-1O-fWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="557.86666666666667" y="301.98666666666668"/>
         </scene>
     </scenes>
 </document>
