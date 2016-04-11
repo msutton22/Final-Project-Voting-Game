@@ -34,8 +34,16 @@ class ViewController: UIViewController {
                     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! QuestionViewController
-        dvc.info = self.info
+        if segue.identifier == "titleToQuestions" {
+            let dvc = segue.destinationViewController as! QuestionViewController
+            dvc.info = self.info
+        }
+            /// HELP 
+        else {
+            let dvc = segue.destinationViewController as! InstructionsViewController
+            dvc.info = self.info
+        }
+        
     }
 
 
