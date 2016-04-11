@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="153.59999999999999" y="301.98666666666668"/>
         </scene>
-        <!--View Controller-->
+        <!--Instructions View Controller-->
         <scene sceneID="NsH-yr-Bvp">
             <objects>
-                <viewController id="bls-1Y-Cff" sceneMemberID="viewController">
+                <viewController id="bls-1Y-Cff" customClass="InstructionsViewController" customModule="The_Voting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mnm-eB-Luq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
