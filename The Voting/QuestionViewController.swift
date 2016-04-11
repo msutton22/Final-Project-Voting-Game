@@ -55,18 +55,23 @@ class QuestionViewController: UIViewController {
     func playerColor() {
         if playerTurnIdentifierLabel.text == info.player1 {
             view.backgroundColor = UIColor.greenColor()
+            playerTurnIdentifierLabel.text = "It's \(info.player1)'s turn to choose a friend, then pass on to the next player."
         }
         else if playerTurnIdentifierLabel.text == info.player2 {
             view.backgroundColor = UIColor.blueColor()
+            playerTurnIdentifierLabel.text = "It's \(info.player2)'s turn to choose a friend, then pass on to the next player."
         }
         else if playerTurnIdentifierLabel.text == info.player3 {
             view.backgroundColor = UIColor.redColor()
+            playerTurnIdentifierLabel.text = "It's \(info.player3)'s turn to choose a friend, then pass on to the next player."
         }
         else if playerTurnIdentifierLabel.text == info.player4 {
             view.backgroundColor = UIColor.yellowColor()
+            playerTurnIdentifierLabel.text = "It's \(info.player4)'s turn to choose a friend, then pass on to the next player."
         }
         else if playerTurnIdentifierLabel.text == info.player5 {
             view.backgroundColor = UIColor.purpleColor()
+            playerTurnIdentifierLabel.text = "It's \(info.player5)'s turn to choose a friend, then pass on to the next player."
         }
     }
   
