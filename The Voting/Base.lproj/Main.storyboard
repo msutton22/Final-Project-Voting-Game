@@ -96,7 +96,7 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backButton:" destination="bls-1Y-Cff" eventType="touchUpInside" id="h4h-fv-5Cl"/>
-                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="backToStart" id="cbo-IZ-cOu"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="backToStart" modalTransitionStyle="crossDissolve" id="cbo-IZ-cOu"/>
                                 </connections>
                             </button>
                         </subviews>
