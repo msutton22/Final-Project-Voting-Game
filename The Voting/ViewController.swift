@@ -9,16 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var info = Information()
+    
     @IBOutlet weak var p1TextField: UITextField!
-
     @IBOutlet weak var p2TextField: UITextField!
-    
     @IBOutlet weak var p3TextField: UITextField!
-    
     @IBOutlet weak var p4TextField: UITextField!
-    
     @IBOutlet weak var p5TextField: UITextField!
+    
+    var info = Information()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,18 +24,26 @@ class ViewController: UIViewController {
     }
     @IBAction func nextButtonAction(sender: AnyObject) {
         if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 {
-            p1TextField.text = info.player1
-            p2TextField.text = info.player2
-            p3TextField.text = info.player3
-            p4TextField.text = info.player4
-            p5TextField.text = info.player5
+            info.player1 = String(p1TextField.text!)
+            info.player2 = String(p2TextField.text!)
+            info.player3 = String(p3TextField.text!)
+            info.player4 = String(p4TextField.text!)
+            info.player5 = String(p5TextField.text!)
                 performSegueWithIdentifier("titleToQuestions", sender: self)
                 }
                     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! QuestionViewController
-        dvc.info = self.info
+        if segue.identifier == "titleToQuestions" {
+            let dvc = segue.destinationViewController as! QuestionViewController
+            dvc.info = self.info
+        }
+            
+        else {
+            let dvc = segue.destinationViewController as! InstructionsViewController
+            dvc.info = self.info
+        }
+        
     }
 
 
