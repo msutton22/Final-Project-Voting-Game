@@ -73,7 +73,7 @@ class QuestionViewController: UIViewController {
         
         if playerTurn == 1 {
             view.backgroundColor = UIColor.greenColor()
-            playerTurnIdentifierLabel.text = "Player 1's turn"
+            playerTurnIdentifierLabel.text = ""
         }
         else if playerTurn == 2 {
             view.backgroundColor = UIColor.blueColor()
