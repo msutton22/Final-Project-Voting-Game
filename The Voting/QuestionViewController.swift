@@ -86,20 +86,20 @@ class QuestionViewController: UIViewController {
   
     func chooseQuestion() {
     let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
-    questionLabel.text = String(info.questions[randomIndex])
+    questionLabel.text = "Who is most likely to\(info.questions[randomIndex])"
     }
     
     func results() {
-        if playerTurn == 6 {
-        let alert = UIAlertController(title: "Winner \(info.player2)", message: nil, preferredStyle: .Alert)
+        if playerTurn == 5 {
+        let alert = UIAlertController(title: "\(info.player1) is the most likely to \(questionLabel.text!)", message: nil, preferredStyle: .Alert)
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.resetGame()
             }
             alert.addAction(alertAction)
-            
+            presentViewController(alert, animated: true, completion: nil)
         }
     }
-    
+
     func resetGame() {
         chooseQuestion()
         playerTurn = 1
