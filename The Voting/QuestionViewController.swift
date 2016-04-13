@@ -95,11 +95,13 @@ class QuestionViewController: UIViewController {
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.resetGame()
             }
+            alert.addAction(alertAction)
             
         }
     }
     
     func resetGame() {
+        chooseQuestion()
         playerTurn = 1
         view.backgroundColor = UIColor.whiteColor()
         
