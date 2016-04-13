@@ -23,6 +23,8 @@ class QuestionViewController: UIViewController {
         override func viewDidLoad() {
         super.viewDidLoad()
             questionLabel.text = String(info.questions)
+            player1Button.setTitle("jone", forState: UIControlState.Normal)
+
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
