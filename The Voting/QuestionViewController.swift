@@ -24,13 +24,11 @@ class QuestionViewController: UIViewController {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-            player1Button.setTitle(info.player1, forState: UIControlState.Normal)
+   player1Button.setTitle(info.player1, forState: UIControlState.Normal)
             player2Button.setTitle(info.player2, forState: UIControlState.Normal)
             player3Button.setTitle(info.player3, forState: UIControlState.Normal)
-            player4button.setTitle(info.player4, forState: UIControlState.Normal)
+        player4button.setTitle(info.player4, forState: UIControlState.Normal)
             player5Button.setTitle(info.player5, forState: UIControlState.Normal)
-       master()
-        
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
