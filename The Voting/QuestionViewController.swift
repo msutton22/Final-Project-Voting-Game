@@ -66,7 +66,6 @@ class QuestionViewController: UIViewController {
         ++playerTurn
         chooseQuestion()
         playerColor()
-        ++playerTurn
         results()
     }
     
