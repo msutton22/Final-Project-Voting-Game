@@ -20,7 +20,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var player5Button: UIButton!
     
     var info = Information()
-    var playerTurn = 0
+    var playerTurn = 1
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,19 +30,27 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
-        master()
+        playerColor()
+        ++playerTurn
+        results()
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
-        master()
+        playerColor()
+        ++playerTurn
+        results()
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
-        master()
+        playerColor()
+        ++playerTurn
+        results()
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
-        master()
+        playerColor()
+        ++playerTurn
+        results()
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
@@ -53,29 +61,30 @@ class QuestionViewController: UIViewController {
         ++playerTurn
         chooseQuestion()
         playerColor()
-        
+        results()
     }
     
     func playerColor() {
+        
         if playerTurn == 1 {
             view.backgroundColor = UIColor.greenColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player1)'s turn to choose a friend, then pass on to the next player."
+            playerTurnIdentifierLabel.text = "Player 1's turn"
         }
         else if playerTurn == 2 {
             view.backgroundColor = UIColor.blueColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player2)'s turn to choose a friend, then pass on to the next player."
+            playerTurnIdentifierLabel.text = "Player 2's turn"
         }
         else if playerTurn == 3 {
             view.backgroundColor = UIColor.redColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player3)'s turn to choose a friend, then pass on to the next player."
+            playerTurnIdentifierLabel.text = "Player 3's turn"
         }
         else if playerTurn == 4 {
             view.backgroundColor = UIColor.yellowColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player4)'s turn to choose a friend, then pass on to the next player."
+            playerTurnIdentifierLabel.text = "Player 4's turn"
         }
         else if playerTurn == 5 {
             view.backgroundColor = UIColor.purpleColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player5)'s turn to choose a friend, then pass on to the next player."
+            playerTurnIdentifierLabel.text = "Player 5's turn"
         }
     }
   
@@ -84,8 +93,22 @@ class QuestionViewController: UIViewController {
     questionLabel.text = String(info.questions[randomIndex])
     }
     
-}
+    func results() {
+        if playerTurn == 6 {
+        let alert = UIAlertController(title: "Winner \(info.player2)", message: nil, preferredStyle: .Alert)
+            let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
+                self.resetGame()
+            }
+            
+        }
+    }
+    
+    func resetGame() {
+        playerTurn = 1
+        view.backgroundColor = UIColor.whiteColor()
+        
+    }
+    
+ }
 
-
- 
 
