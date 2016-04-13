@@ -33,8 +33,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             info.player4 = String(p4TextField.text!)
             info.player5 = String(p5TextField.text!)
                 performSegueWithIdentifier("titleToQuestions", sender: self)
-                }
-                    }
+            }
+        }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "titleToQuestions" {
