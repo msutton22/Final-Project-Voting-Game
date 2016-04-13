@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var p1TextField: UITextField!
     @IBOutlet weak var p2TextField: UITextField!
@@ -17,10 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var p5TextField: UITextField!
     
     var info = Information()
+    var backgroundMusicPlayer = AVAudioPlayer()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        playBackgroundMusic()
     }
     @IBAction func nextButtonAction(sender: AnyObject) {
         if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 {
@@ -47,6 +50,18 @@ class ViewController: UIViewController {
     }
 
 
+    func playBackgroundMusic() {
+        let url = NSBundle.mainBundle().URLForResource("game music.mp3", withExtension: nil)
+        
+        do {
+            backgroundMusicPlayer = try AVAudioPlayer(contentsOfURL: url!)
+            backgroundMusicPlayer.numberOfLoops = -1
+            backgroundMusicPlayer.prepareToPlay()
+            backgroundMusicPlayer.play()
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
 
     
 }
