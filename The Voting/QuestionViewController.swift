@@ -24,13 +24,11 @@ class QuestionViewController: UIViewController {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-            player1Button.setTitle(info.player1, forState: UIControlState.Normal)
+   player1Button.setTitle(info.player1, forState: UIControlState.Normal)
             player2Button.setTitle(info.player2, forState: UIControlState.Normal)
             player3Button.setTitle(info.player3, forState: UIControlState.Normal)
-            player4button.setTitle(info.player4, forState: UIControlState.Normal)
+        player4button.setTitle(info.player4, forState: UIControlState.Normal)
             player5Button.setTitle(info.player5, forState: UIControlState.Normal)
-       master()
-        
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
@@ -64,7 +62,7 @@ class QuestionViewController: UIViewController {
         
         if playerTurn == 1 {
             view.backgroundColor = UIColor.greenColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player1)'s turn to choose a friend, then pass on to the next player."
+            playerTurnIdentifierLabel.text = ""
         }
         else if playerTurn == 2 {
             view.backgroundColor = UIColor.blueColor()
@@ -95,11 +93,13 @@ class QuestionViewController: UIViewController {
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.resetGame()
             }
+            alert.addAction(alertAction)
             
         }
     }
     
     func resetGame() {
+        chooseQuestion()
         playerTurn = 1
         view.backgroundColor = UIColor.whiteColor()
         
