@@ -21,6 +21,11 @@ class QuestionViewController: UIViewController {
     
     var info = Information()
     var playerTurn = 0
+    var player1Tapped = 0
+    var player2Tapped = 0
+    var player3Tapped = 0
+    var player4Tapped = 0
+    var player5Tapped = 0
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,29 +39,34 @@ class QuestionViewController: UIViewController {
     
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
+      ++player1Tapped
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
        master()
+       ++player2Tapped
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         master()
+        ++player3Tapped
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
        master()
+        ++player4Tapped
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         master()
+        ++player5Tapped
     }
     
     func master () {
         ++playerTurn
         chooseQuestion()
         playerColor()
-        results()
+        results("\(info.player1)")
     }
     
     func playerColor() {
@@ -86,11 +96,11 @@ class QuestionViewController: UIViewController {
     func chooseQuestion() {
     let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
     questionLabel.text = "Who is most likely to\(info.questions[randomIndex])"
+        
     }
-    
-    func results() {
-        if playerTurn == 5 {
-        let alert = UIAlertController(title: "\(info.player1) is the most likely to \(questionLabel.text!)", message: nil, preferredStyle: .Alert)
+    func results(winner: String) {
+        if playerTurn == 6 {
+            let alert = UIAlertController(title: winner, message: nil, preferredStyle: .Alert)
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.resetGame()
             }
@@ -98,14 +108,32 @@ class QuestionViewController: UIViewController {
             presentViewController(alert, animated: true, completion: nil)
         }
     }
-
+    
     func resetGame() {
         chooseQuestion()
         playerTurn = 1
         view.backgroundColor = UIColor.whiteColor()
         
     }
-    
- }
 
-
+    func winner() {
+        if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped{
+         results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+        }
+        else if player2Tapped > player1Tapped & player3Tapped & player4Tapped & player5Tapped{
+         results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+        }
+        else if player3Tapped > player2Tapped & player1Tapped & player4Tapped & player5Tapped{
+            results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+        }
+        else if player4Tapped > player1Tapped & player2Tapped & player3Tapped & player5Tapped{
+            results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+      }
+        else if player5Tapped > player1Tapped & player2Tapped & player2Tapped & player4Tapped{
+            results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+      }
+        else {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+  }
+}
