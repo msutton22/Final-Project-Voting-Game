@@ -59,6 +59,12 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
+        master()
+    }
+    
+    func master () {
+        ++playerTurn
+        chooseQuestion()
         playerColor()
         ++playerTurn
         results()
