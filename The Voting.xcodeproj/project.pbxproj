@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4853431CC006EB007457F0 /* game music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F4853421CC006EB007457F0 /* game music.mp3 */; };
 		3F4BB7FD1CB6C7B800339533 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BB7FC1CB6C7B800339533 /* QuestionViewController.swift */; };
 		3F4BB8001CB81C4100339533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BB7FE1CB81C4100339533 /* Main.storyboard */; };
 		3F5580251CBC2AFE00CC1E58 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5580241CBC2AFE00CC1E58 /* InstructionsViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F4853421CC006EB007457F0 /* game music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "game music.mp3"; path = "../game music.mp3"; sourceTree = "<group>"; };
 		3F4BB7FC1CB6C7B800339533 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		3F4BB7FF1CB81C4100339533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F5580241CBC2AFE00CC1E58 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
