@@ -26,6 +26,8 @@ class QuestionViewController: UIViewController {
     var player3Tapped = 0
     var player4Tapped = 0
     var player5Tapped = 0
+    var loopCounter = 0
+    var playerArray : [Int]
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,6 +114,15 @@ class QuestionViewController: UIViewController {
 
     
     func winner() {
+    playerArray.append(player1Tapped)
+    playerArray.append(player2Tapped)
+    playerArray.append(player3Tapped)
+    playerArray.append(player4Tapped)
+    playerArray.append(player5Tapped)
+        for player in playerArray {
+            
+        }
+        
         if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped {
          results("\(info.player1) is the most likely to \(questionLabel.text!)")
         }
