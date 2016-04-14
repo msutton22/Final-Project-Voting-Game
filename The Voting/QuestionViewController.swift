@@ -112,7 +112,7 @@ class QuestionViewController: UIViewController {
 
     
     func winner() {
-        if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped{
+        if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped {
          results("\(info.player1) is the most likely to \(questionLabel.text!)")
         }
         else if player2Tapped > player1Tapped & player3Tapped & player4Tapped & player5Tapped{
