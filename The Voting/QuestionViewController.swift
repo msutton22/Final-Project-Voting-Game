@@ -27,7 +27,7 @@ class QuestionViewController: UIViewController {
     var player4Tapped = 0
     var player5Tapped = 0
     var loopCounter = 0
-    var playerArray : [Int]
+    var playerArray : [Int] = []
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +66,6 @@ class QuestionViewController: UIViewController {
     
     func master () {
         ++playerTurn
-        chooseQuestion()
         playerColor()
         winner()
     }
@@ -114,11 +113,12 @@ class QuestionViewController: UIViewController {
 
     
     func winner() {
-    playerArray.append(player1Tapped)
-    playerArray.append(player2Tapped)
-    playerArray.append(player3Tapped)
-    playerArray.append(player4Tapped)
-    playerArray.append(player5Tapped)
+        playerArray.append(player1Tapped)
+        playerArray.append(player2Tapped)
+        playerArray.append(player3Tapped)
+        playerArray.append(player4Tapped)
+        playerArray.append(player5Tapped)
+        
         for player in playerArray {
             
         }
