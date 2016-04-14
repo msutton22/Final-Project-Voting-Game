@@ -124,19 +124,19 @@ class QuestionViewController: UIViewController {
     playerArray.append(player5Tapped)
         
         if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped {
-         results("\(info.player1) is the most likely to \(questionLabel.text!)")
+         results("\(questionLabel.text!)...\(info.player1)")
         }
         else if player2Tapped > player1Tapped & player3Tapped & player4Tapped & player5Tapped{
-         results("\(info.player2) is the most likely to \(questionLabel.text!)")
+         results("\(questionLabel.text!)...\(info.player2)")
         }
         else if player3Tapped > player2Tapped & player1Tapped & player4Tapped & player5Tapped{
-            results("\(info.player3) is the most likely to \(questionLabel.text!)")
+            results("\(questionLabel.text!)...\(info.player3)")
         }
         else if player4Tapped > player1Tapped & player2Tapped & player3Tapped & player5Tapped{
-            results("\(info.player4) is the most likely to \(questionLabel.text!)")
+            results("\(questionLabel.text!)...\(info.player4)")
       }
         else if player5Tapped > player1Tapped & player2Tapped & player2Tapped & player4Tapped{
-            results("\(info.player5) is the most likely to \(questionLabel.text!)")
+            results("\(questionLabel.text!)...\(info.player5)")
       }
         else {
             results("Its a tie. No one wanted to throw someone under the bus")
