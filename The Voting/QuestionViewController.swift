@@ -102,12 +102,14 @@ class QuestionViewController: UIViewController {
         if playerTurn == 6 {
             let alert = UIAlertController(title: winner, message: nil, preferredStyle: .Alert)
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
+                self.playerTurn = 0
                 self.master()
             }
             alert.addAction(alertAction)
             presentViewController(alert, animated: true, completion: nil)
         }
     }
+
     
     func winner() {
         if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped{
