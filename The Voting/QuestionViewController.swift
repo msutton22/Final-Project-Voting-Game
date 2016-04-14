@@ -111,19 +111,19 @@ class QuestionViewController: UIViewController {
     
     func winner() {
         if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped{
-         results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+         results("\(info.player1) is the most likely t0 \(questionLabel.text!)")
         }
         else if player2Tapped > player1Tapped & player3Tapped & player4Tapped & player5Tapped{
-         results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+         results("\(info.player1) is the most likely t0 \(questionLabel.text!)")
         }
         else if player3Tapped > player2Tapped & player1Tapped & player4Tapped & player5Tapped{
-            results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+            results("\(info.player1) is the most likely t0 \(questionLabel.text!)")
         }
         else if player4Tapped > player1Tapped & player2Tapped & player3Tapped & player5Tapped{
-            results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+            results("\(info.player1) is the most likely t0 \(questionLabel.text!)")
       }
         else if player5Tapped > player1Tapped & player2Tapped & player2Tapped & player4Tapped{
-            results("\(info.player1) is the most likely t0 \(questionLabel.text)")
+            results("\(info.player1) is the most likely t0 \(questionLabel.text!)")
       }
         else {
             results("Its a tie. No one wanted to throw someone under the bus")
