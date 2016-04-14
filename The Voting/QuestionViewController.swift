@@ -27,7 +27,7 @@ class QuestionViewController: UIViewController {
     var player4Tapped = 0
     var player5Tapped = 0
     var loopCounter = 0
-    var playerArray : [Int]
+    var playerArray : [Int] = []
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,6 +106,9 @@ class QuestionViewController: UIViewController {
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.playerTurn = 0
                 self.master()
+                for player in self.playerArray {
+                    player == 0
+                }
             }
             alert.addAction(alertAction)
             presentViewController(alert, animated: true, completion: nil)
@@ -119,9 +122,6 @@ class QuestionViewController: UIViewController {
     playerArray.append(player3Tapped)
     playerArray.append(player4Tapped)
     playerArray.append(player5Tapped)
-        for player in playerArray {
-            
-        }
         
         if player1Tapped > player2Tapped & player3Tapped & player4Tapped & player5Tapped {
          results("\(info.player1) is the most likely to \(questionLabel.text!)")
