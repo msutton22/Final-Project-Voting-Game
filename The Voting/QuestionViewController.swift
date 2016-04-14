@@ -105,6 +105,9 @@ class QuestionViewController: UIViewController {
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.playerTurn = 0
                 self.master()
+                for player in self.playerArray {
+                    player == 0
+                }
             }
             alert.addAction(alertAction)
             presentViewController(alert, animated: true, completion: nil)
