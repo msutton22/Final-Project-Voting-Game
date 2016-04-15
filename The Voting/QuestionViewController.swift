@@ -26,8 +26,6 @@ class QuestionViewController: UIViewController {
     var player3Tapped = 0
     var player4Tapped = 0
     var player5Tapped = 0
-    var loopCounter = 0
-    var playerArray : [Int] = []
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,9 +105,12 @@ class QuestionViewController: UIViewController {
                 self.playerTurn = 0
                 self.master()
                 self.chooseQuestion()
-                for player in self.playerArray {
-                    player == 0
-                }
+                self.player1Tapped = 0
+                self.player2Tapped = 0
+                self.player3Tapped = 0
+                self.player4Tapped = 0
+                self.player5Tapped = 0
+                
             }
             alert.addAction(alertAction)
             presentViewController(alert, animated: true, completion: nil)
@@ -118,11 +119,7 @@ class QuestionViewController: UIViewController {
 
     
     func winner() {
-        playerArray.append(player1Tapped)
-        playerArray.append(player2Tapped)
-        playerArray.append(player3Tapped)
-        playerArray.append(player4Tapped)
-        playerArray.append(player5Tapped)
+        
         
         if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped) {
          results("\(questionLabel.text!)...\(info.player1)")
