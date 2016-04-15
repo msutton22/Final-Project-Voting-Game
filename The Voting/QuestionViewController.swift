@@ -111,8 +111,11 @@ class QuestionViewController: UIViewController {
                 }
             }
             alert.addAction(alertAction)
+            let cancelAction = UIAlertAction(title: "Quit", style: .Cancel, handler: nil)
+            alert.addAction(cancelAction)
             presentViewController(alert, animated: true, completion: nil)
         }
+       
     }
 
     
