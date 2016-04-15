@@ -139,8 +139,35 @@ class QuestionViewController: UIViewController {
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
             results("\(questionLabel.text!)...\(info.player5)")
       }
-        else {
+        else if player1Tapped == player2Tapped {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-  }
+        else if player1Tapped == player3Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player1Tapped == player4Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player1Tapped == player5Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player2Tapped == player3Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player2Tapped == player4Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player2Tapped == player5Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player3Tapped == player4Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player3Tapped == player5Tapped {
+            results("Its a tie. No one wanted to throw someone under the bus")
+        }
+        else if player4Tapped == player5Tapped {
+        results("Its a tie. No one wanted to throw someone under the bus")
+        }
+          }
 }
