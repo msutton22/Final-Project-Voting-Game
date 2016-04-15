@@ -100,21 +100,24 @@ class QuestionViewController: UIViewController {
     }
     func results(winner: String) {
         if playerTurn == 6 {
+            playerTurn = 0
+            player1Tapped = 0
+            player2Tapped = 0
+            player3Tapped = 0
+            player4Tapped = 0
+            player5Tapped = 0
             let alert = UIAlertController(title: winner, message: nil, preferredStyle: .Alert)
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
-                self.playerTurn = 0
                 self.master()
                 self.chooseQuestion()
-                self.player1Tapped = 0
-                self.player2Tapped = 0
-                self.player3Tapped = 0
-                self.player4Tapped = 0
-                self.player5Tapped = 0
                 
             }
             alert.addAction(alertAction)
+            let cancelAction = UIAlertAction(title: "Quit", style: .Cancel, handler: nil)
+            alert.addAction(cancelAction)
             presentViewController(alert, animated: true, completion: nil)
         }
+       
     }
 
     
