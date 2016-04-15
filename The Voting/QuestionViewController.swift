@@ -110,14 +110,14 @@ class QuestionViewController: UIViewController {
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.master()
                 self.chooseQuestion()
-                
             }
             alert.addAction(alertAction)
-            let cancelAction = UIAlertAction(title: "Quit", style: .Cancel, handler: nil)
+            let cancelAction = UIAlertAction(title: "Quit", style: .Default, handler: { (action) in
+                exit(0)
+            })
             alert.addAction(cancelAction)
             presentViewController(alert, animated: true, completion: nil)
         }
-       
     }
 
     func winner() {
