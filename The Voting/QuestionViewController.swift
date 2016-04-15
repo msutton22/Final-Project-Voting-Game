@@ -123,23 +123,7 @@ class QuestionViewController: UIViewController {
     
     func winner() {
         
-        
-        if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped) {
-         results("\(questionLabel.text!)...\(info.player1)")
-        }
-        else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
-         results("\(questionLabel.text!)...\(info.player2)")
-        }
-        else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
-            results("\(questionLabel.text!)...\(info.player3)")
-        }
-        else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
-            results("\(questionLabel.text!)...\(info.player4)")
-      }
-        else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
-            results("\(questionLabel.text!)...\(info.player5)")
-      }
-        else if player1Tapped == player2Tapped {
+         if player1Tapped == player2Tapped {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
         else if player1Tapped == player3Tapped {
@@ -167,7 +151,23 @@ class QuestionViewController: UIViewController {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
         else if player4Tapped == player5Tapped {
-        results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one wanted to throw someone under the bus")
         }
-          }
+
+       else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped) {
+         results("\(questionLabel.text!)...\(info.player1)")
+        }
+        else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
+         results("\(questionLabel.text!)...\(info.player2)")
+        }
+        else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
+            results("\(questionLabel.text!)...\(info.player3)")
+        }
+        else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
+            results("\(questionLabel.text!)...\(info.player4)")
+      }
+        else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
+            results("\(questionLabel.text!)...\(info.player5)")
+      }
+                  }
 }
