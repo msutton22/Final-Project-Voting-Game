@@ -32,6 +32,7 @@ class QuestionViewController: UIViewController {
         override func viewDidLoad() {
         super.viewDidLoad()
             master()
+            chooseQuestion()
             player1Button.setTitle(info.player1, forState: UIControlState.Normal)
             player2Button.setTitle(info.player2, forState: UIControlState.Normal)
             player3Button.setTitle(info.player3, forState: UIControlState.Normal)
@@ -105,6 +106,7 @@ class QuestionViewController: UIViewController {
             let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
                 self.playerTurn = 0
                 self.master()
+                self.chooseQuestion()
                 for player in self.playerArray {
                     player == 0
                 }
