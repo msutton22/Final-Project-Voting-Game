@@ -138,8 +138,5 @@ class QuestionViewController: UIViewController {
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
             results("\(questionLabel.text!)... \(info.player5)")
       }
-        else {
-            results("Its a tie. No one wanted to throw someone under the bus")
-        }
-  }
+                  }
 }
