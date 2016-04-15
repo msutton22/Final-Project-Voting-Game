@@ -95,7 +95,7 @@ class QuestionViewController: UIViewController {
   
     func chooseQuestion() {
     let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
-    questionLabel.text = "Who is most likely to\(info.questions[randomIndex])"
+    questionLabel.text = "Who is most likely to \(info.questions[randomIndex])"
         
     }
     func results(winner: String) {
@@ -120,24 +120,23 @@ class QuestionViewController: UIViewController {
        
     }
 
-    
     func winner() {
         
         
         if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped) {
-         results("\(questionLabel.text!)...\(info.player1)")
+         results("\(questionLabel.text!)... \(info.player1)")
         }
         else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
-         results("\(questionLabel.text!)...\(info.player2)")
+         results("\(questionLabel.text!)... \(info.player2)")
         }
         else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
-            results("\(questionLabel.text!)...\(info.player3)")
+            results("\(questionLabel.text!)... \(info.player3)")
         }
         else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
-            results("\(questionLabel.text!)...\(info.player4)")
+            results("\(questionLabel.text!)... \(info.player4)")
       }
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
-            results("\(questionLabel.text!)...\(info.player5)")
+            results("\(questionLabel.text!)... \(info.player5)")
       }
         else {
             results("Its a tie. No one wanted to throw someone under the bus")
