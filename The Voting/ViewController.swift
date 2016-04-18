@@ -49,7 +49,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
 
-
     func playBackgroundMusic() {
         let url = NSBundle.mainBundle().URLForResource("game music.mp3", withExtension: nil)
         
