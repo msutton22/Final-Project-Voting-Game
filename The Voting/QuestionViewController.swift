@@ -123,34 +123,34 @@ class QuestionViewController: UIViewController {
     
     func winner() {
         
-         if player1Tapped == player2Tapped {
+        if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player1Tapped == player3Tapped {
+        else if player1Tapped == player3Tapped && (player1Tapped * 3) > (player2Tapped + player4Tapped + player5Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player1Tapped == player4Tapped {
+        else if player1Tapped == player4Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player5Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player1Tapped == player5Tapped {
+        else if player1Tapped == player5Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player4Tapped){
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player2Tapped == player3Tapped {
+        else if player2Tapped == player3Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player5Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player2Tapped == player4Tapped {
+        else if player2Tapped == player4Tapped && (player2Tapped * 3) > (player1Tapped + player3Tapped + player5Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player2Tapped == player5Tapped {
+        else if player2Tapped == player5Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player3Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player3Tapped == player4Tapped {
+        else if player3Tapped == player4Tapped && (player3Tapped * 3) > (player1Tapped + player2Tapped + player5Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player3Tapped == player5Tapped {
+        else if player3Tapped == player5Tapped && (player3Tapped * 3) > (player1Tapped + player4Tapped + player2Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
-        else if player4Tapped == player5Tapped {
+        else if player4Tapped == player5Tapped && (player4Tapped * 3) > (player1Tapped + player2Tapped + player3Tapped) {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
 
