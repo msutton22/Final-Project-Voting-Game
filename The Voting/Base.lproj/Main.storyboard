@@ -60,7 +60,6 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAc-Wa-6an"/>
-                                    <segue destination="LQI-02-t2M" kind="modal" identifier="titleToQuestions" id="n0k-2p-dad"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,11 +71,12 @@
                         <outlet property="p3TextField" destination="dgt-8x-gEN" id="vpl-QA-h7R"/>
                         <outlet property="p4TextField" destination="ftP-IA-0Pj" id="XFS-3i-qsj"/>
                         <outlet property="p5TextField" destination="wjj-vc-AQx" id="Evh-Yu-bKh"/>
+                        <segue destination="LQI-02-t2M" kind="modal" identifier="titleToQuestions" id="9bx-1h-OvX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153.59999999999999" y="301.98666666666668"/>
+            <point key="canvasLocation" x="101" y="301"/>
         </scene>
         <!--Instructions View Controller-->
         <scene sceneID="NsH-yr-Bvp">
@@ -195,6 +195,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CvQ-fZ-qOR"/>
                     <connections>
                         <outlet property="player1Button" destination="JF5-kP-hyH" id="xdZ-Ir-DRg"/>
                         <outlet property="player2Button" destination="cdu-s9-FrE" id="nH5-s4-ea2"/>
@@ -207,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="993"/>
+            <point key="canvasLocation" x="127" y="1046"/>
         </scene>
     </scenes>
 </document>

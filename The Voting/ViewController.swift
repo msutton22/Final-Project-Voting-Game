@@ -26,14 +26,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         playBackgroundMusic()
     }
     @IBAction func nextButtonAction(sender: AnyObject) {
-        if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 {
+        if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 && p4TextField.text?.characters.count != 0 && p5TextField.text?.characters.count != 0 {
             info.player1 = String(p1TextField.text!)
             info.player2 = String(p2TextField.text!)
             info.player3 = String(p3TextField.text!)
             info.player4 = String(p4TextField.text!)
             info.player5 = String(p5TextField.text!)
-                performSegueWithIdentifier("titleToQuestions", sender: self)
+            performSegueWithIdentifier("titleToQuestions", sender: self)
             }
+        
         }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -45,9 +46,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         else {
             let dvc = segue.destinationViewController as! InstructionsViewController
             dvc.info = self.info
-        }
+      }
         
-    }
+  }
 
     func playBackgroundMusic() {
         let url = NSBundle.mainBundle().URLForResource("game music.mp3", withExtension: nil)
