@@ -36,6 +36,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             }
         
         }
+    @IBAction func aboutThisGameButton(sender: AnyObject) {
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "titleToQuestions" {
