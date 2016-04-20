@@ -107,12 +107,12 @@ class QuestionViewController: UIViewController {
             player4Tapped = 0
             player5Tapped = 0
             let alert = UIAlertController(title: winner, message: nil, preferredStyle: .Alert)
-            let alertAction = UIAlertAction(title: "Reset", style : .Default) { (action) -> Void in
+            let alertAction = UIAlertAction(title: "Next", style : .Default) { (action) -> Void in
                 self.master()
                 self.chooseQuestion()
             }
             alert.addAction(alertAction)
-            let cancelAction = UIAlertAction(title: "Quit", style: .Default, handler: { (action) in
+            let cancelAction = UIAlertAction(title: "Finish", style: .Default, handler: { (action) in
                 exit(0)
             })
             alert.addAction(cancelAction)
