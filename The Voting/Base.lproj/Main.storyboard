@@ -49,6 +49,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="aboutThisGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qeO-yf-VWb"/>
                                     <segue destination="bls-1Y-Cff" kind="modal" id="LhL-bQ-rDe"/>
                                 </connections>
                             </button>
