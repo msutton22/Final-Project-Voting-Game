@@ -41,6 +41,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
     @IBAction func aboutThisGameButton(sender: AnyObject) {
+        performSegueWithIdentifier("toInstruct", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -49,7 +50,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             dvc.info = self.info
         }
             
-        else {
+        else if segue.identifier == "toInstruct" {
             let dvc = segue.destinationViewController as! InstructionsViewController
             dvc.info = self.info
       }
