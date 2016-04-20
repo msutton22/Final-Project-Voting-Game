@@ -24,6 +24,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         playBackgroundMusic()
+        p1TextField.text = "\(info.player1)"
+        p2TextField.text = "\(info.player2)"
+        p3TextField.text = "\(info.player3)"
+        p4TextField.text = "\(info.player4)"
+        p5TextField.text = "\(info.player5)"
     }
     @IBAction func nextButtonAction(sender: AnyObject) {
         if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 && p4TextField.text?.characters.count != 0 && p5TextField.text?.characters.count != 0 {
@@ -36,6 +41,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
     @IBAction func aboutThisGameButton(sender: AnyObject) {
+        performSegueWithIdentifier("toInstruct", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -44,7 +50,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             dvc.info = self.info
         }
             
-        else {
+        else if segue.identifier == "toInstruct" {
             let dvc = segue.destinationViewController as! InstructionsViewController
             dvc.info = self.info
       }
