@@ -41,6 +41,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
     @IBAction func aboutThisGameButton(sender: AnyObject) {
+        info.player1 = String(p1TextField.text!)
+        info.player2 = String(p2TextField.text!)
+        info.player3 = String(p3TextField.text!)
+        info.player4 = String(p4TextField.text!)
+        info.player5 = String(p5TextField.text!)
         performSegueWithIdentifier("toInstruct", sender: self)
     }
     
