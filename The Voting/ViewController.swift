@@ -34,7 +34,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             info.player5 = String(p5TextField.text!)
             performSegueWithIdentifier("titleToQuestions", sender: self)
             }
-        
         }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
