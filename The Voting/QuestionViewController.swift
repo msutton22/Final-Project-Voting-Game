@@ -26,6 +26,12 @@ class QuestionViewController: UIViewController {
     var player3Tapped = 0
     var player4Tapped = 0
     var player5Tapped = 0
+    var player1won  = 0
+    var player2won = 0
+    var player3won = 0
+    var player4won = 0
+    var player5won = 0
+    
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -153,19 +159,25 @@ class QuestionViewController: UIViewController {
             results("Its a tie. No one wanted to throw someone under the bus")
         }
 
-       else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped) {
+       else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
+        {
+            ++player1won
          results("\(info.player1)")
         }
         else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
+            ++player2won
          results("\(info.player2)")
         }
         else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
+            ++player3won
             results("\(info.player3)")
         }
         else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
+            ++player4won
             results("\(info.player4)")
       }
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
+            ++player5won
             results("\(info.player5)")
       }
                   }

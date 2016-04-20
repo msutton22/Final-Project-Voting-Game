@@ -9,11 +9,14 @@
 import UIKit
 
 class EndScreenViewController: UIViewController {
+    @IBOutlet weak var endScreenLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    @IBAction func startOver(sender: AnyObject) {
+    }
    
 }
