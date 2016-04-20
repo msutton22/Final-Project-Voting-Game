@@ -205,7 +205,7 @@
                         <outlet property="player5Button" destination="6Ak-ir-lc3" id="gDA-Mj-RUC"/>
                         <outlet property="playerTurnIdentifierLabel" destination="XVq-qD-2Lo" id="VZJ-T4-Vyi"/>
                         <outlet property="questionLabel" destination="eTR-bM-A2X" id="8nu-fB-1AF"/>
-                        <segue destination="pYw-Ks-KrR" kind="modal" id="vmB-Ms-1lX"/>
+                        <segue destination="pYw-Ks-KrR" kind="modal" identifier="TOEND" id="vmB-Ms-1lX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
