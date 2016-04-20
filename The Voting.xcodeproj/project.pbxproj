@@ -19,6 +19,7 @@
 		3FBBE9701CB6CF5E00467C88 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE96F1CB6CF5E00467C88 /* Information.swift */; };
 		3FF5FC181CBEB1500075F9A5 /* game music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5FC171CBEB1500075F9A5 /* game music.mp3 */; };
 		3FF5FC241CC7EB2B0075F9A5 /* game music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5FC231CC7EB2B0075F9A5 /* game music.mp3 */; settings = {ASSET_TAGS = (); }; };
+		3FF5FC261CC7ED5A0075F9A5 /* EndScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5FC251CC7ED5A0075F9A5 /* EndScreenViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		3FBBE96F1CB6CF5E00467C88 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		3FF5FC171CBEB1500075F9A5 /* game music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "game music.mp3"; path = "../../../game music.mp3"; sourceTree = "<group>"; };
 		3FF5FC231CC7EB2B0075F9A5 /* game music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "game music.mp3"; path = "../../game music.mp3"; sourceTree = "<group>"; };
+		3FF5FC251CC7ED5A0075F9A5 /* EndScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				3FBBE9411CB573FD00467C88 /* AppDelegate.swift */,
 				3FBBE96F1CB6CF5E00467C88 /* Information.swift */,
 				3FBBE9431CB573FD00467C88 /* ViewController.swift */,
+				3FF5FC251CC7ED5A0075F9A5 /* EndScreenViewController.swift */,
 				3F4BB7FC1CB6C7B800339533 /* QuestionViewController.swift */,
 				3F5580241CBC2AFE00CC1E58 /* InstructionsViewController.swift */,
 				3FBBE9481CB573FD00467C88 /* Assets.xcassets */,
@@ -277,6 +280,7 @@
 			files = (
 				3FBBE9441CB573FD00467C88 /* ViewController.swift in Sources */,
 				3FBBE9421CB573FD00467C88 /* AppDelegate.swift in Sources */,
+				3FF5FC261CC7ED5A0075F9A5 /* EndScreenViewController.swift in Sources */,
 				3FBBE9701CB6CF5E00467C88 /* Information.swift in Sources */,
 				3F4BB7FD1CB6C7B800339533 /* QuestionViewController.swift in Sources */,
 				3F5580251CBC2AFE00CC1E58 /* InstructionsViewController.swift in Sources */,
