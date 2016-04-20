@@ -113,7 +113,7 @@ class QuestionViewController: UIViewController {
             }
             alert.addAction(alertAction)
             let cancelAction = UIAlertAction(title: "Finish", style: .Default, handler: { (action) in
-                exit(0)
+                self.performSegueWithIdentifier("TOEND", sender: nil)
             })
             alert.addAction(cancelAction)
             presentViewController(alert, animated: true, completion: nil)
@@ -154,19 +154,19 @@ class QuestionViewController: UIViewController {
         }
 
        else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped) {
-         results("\(questionLabel.text!)...\(info.player1)")
+         results("\(info.player1)")
         }
         else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
-         results("\(questionLabel.text!)... \(info.player2)")
+         results("\(info.player2)")
         }
         else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
-            results("\(questionLabel.text!)... \(info.player3)")
+            results("\(info.player3)")
         }
         else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
-            results("\(questionLabel.text!)... \(info.player4)")
+            results("\(info.player4)")
       }
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
-            results("\(questionLabel.text!)... \(info.player5)")
+            results("\(info.player5)")
       }
                   }
 }
