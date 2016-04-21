@@ -23,7 +23,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playBackgroundMusic()
+  //      playBackgroundMusic()
         p1TextField.text = "\(info.player1)"
         p2TextField.text = "\(info.player2)"
         p3TextField.text = "\(info.player3)"
@@ -62,18 +62,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
   }
 
-    func playBackgroundMusic() {
-        let url = NSBundle.mainBundle().URLForResource("game music.mp3", withExtension: nil)
-        
-        do {
-            backgroundMusicPlayer = try AVAudioPlayer(contentsOfURL: url!)
-            backgroundMusicPlayer.numberOfLoops = -1
-            backgroundMusicPlayer.prepareToPlay()
-            backgroundMusicPlayer.play()
-        } catch let error as NSError {
-            print(error.description)
-        }
-    }
+   // func playBackgroundMusic() {
+   //     let url = NSBundle.mainBundle().URLForResource("game music.mp3", withExtension: nil)
+     //
+       // do {
+         //   backgroundMusicPlayer = try AVAudioPlayer(contentsOfURL: url!)
+           // backgroundMusicPlayer.numberOfLoops = -1
+          //  backgroundMusicPlayer.prepareToPlay()
+          //  backgroundMusicPlayer.play()
+    //    } catch let error as NSError {
+      //      print(error.description)
+      //  }
+   // }
 
     
 }
