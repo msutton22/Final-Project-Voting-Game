@@ -114,7 +114,7 @@ class QuestionViewController: UIViewController {
             }
             alert.addAction(alertAction)
             let cancelAction = UIAlertAction(title: "Finish", style: .Default, handler: { (action) in
-                self.performSegueWithIdentifier("TOEND", sender: nil)
+                self.performSegueWithIdentifier("ToEnd", sender: nil)
             })
             alert.addAction(cancelAction)
             presentViewController(alert, animated: true, completion: nil)
