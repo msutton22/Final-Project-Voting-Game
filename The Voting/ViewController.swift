@@ -20,7 +20,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var info = Information()
     var backgroundMusicPlayer = AVAudioPlayer()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
   //      playBackgroundMusic()
@@ -30,6 +29,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         p4TextField.text = "\(info.player4)"
         p5TextField.text = "\(info.player5)"
     }
+    
     @IBAction func nextButtonAction(sender: AnyObject) {
         if p1TextField.text?.characters.count != 0 && p2TextField.text?.characters.count != 0 && p3TextField.text?.characters.count != 0 && p4TextField.text?.characters.count != 0 && p5TextField.text?.characters.count != 0 {
             info.player1 = String(p1TextField.text!)
@@ -40,6 +40,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             performSegueWithIdentifier("titleToQuestions", sender: self)
             }
         }
+    
     @IBAction func aboutThisGameButton(sender: AnyObject) {
         info.player1 = String(p1TextField.text!)
         info.player2 = String(p2TextField.text!)
@@ -50,6 +51,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "titleToQuestions" {
             let dvc = segue.destinationViewController as! QuestionViewController
             dvc.info = self.info
@@ -59,20 +61,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             let dvc = segue.destinationViewController as! InstructionsViewController
             dvc.info = self.info
       }
-        
   }
 
    // func playBackgroundMusic() {
    //     let url = NSBundle.mainBundle().URLForResource("game music.mp3", withExtension: nil)
-     //
-       // do {
-         //   backgroundMusicPlayer = try AVAudioPlayer(contentsOfURL: url!)
-           // backgroundMusicPlayer.numberOfLoops = -1
-          //  backgroundMusicPlayer.prepareToPlay()
-          //  backgroundMusicPlayer.play()
-    //    } catch let error as NSError {
-      //      print(error.description)
-      //  }
+   
+   //     do {
+   //         backgroundMusicPlayer = try AVAudioPlayer(contentsOfURL: url!)
+   //         backgroundMusicPlayer.numberOfLoops = -1
+   //         backgroundMusicPlayer.prepareToPlay()
+   //         backgroundMusicPlayer.play()
+   //     } catch let error as NSError {
+   //         print(error.description)
+   //     }
    // }
 
     

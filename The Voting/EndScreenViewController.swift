@@ -11,15 +11,16 @@ import UIKit
 class EndScreenViewController: UIViewController {
     
     @IBOutlet weak var endScreenLabel: UILabel!
-     var info = Information()
+    
+    var info = Information()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func startOver(sender: AnyObject) {
     }
+    
     func overallWinner() {
         if info.player1won > info.player2won {
             endScreenLabel.text = "\(info.player1)"

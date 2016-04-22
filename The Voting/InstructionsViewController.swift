@@ -14,8 +14,6 @@ class InstructionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
     @IBAction func backButton(sender: AnyObject) {

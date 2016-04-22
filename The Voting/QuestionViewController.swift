@@ -97,8 +97,8 @@ class QuestionViewController: UIViewController {
     func chooseQuestion() {
     let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
     questionLabel.text = "Who would \(info.questions[randomIndex])?"
-        
     }
+    
     func results(winner: String) {
         if playerTurn == 6 {
             playerTurn = 0
