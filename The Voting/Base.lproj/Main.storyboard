@@ -279,7 +279,6 @@
                                 </state>
                                 <connections>
                                     <action selector="startOver:" destination="pYw-Ks-KrR" eventType="touchUpInside" id="iGP-Zu-iA0"/>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="Ze3-gM-Q18"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -298,7 +297,4 @@
             <point key="canvasLocation" x="713" y="1046"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ze3-gM-Q18"/>
-    </inferredMetricsTieBreakers>
 </document>
