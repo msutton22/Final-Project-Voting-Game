@@ -24,6 +24,4 @@ class InstructionsViewController: UIViewController {
             let dvc = segue.destinationViewController as! ViewController
             dvc.info = self.info
     }
-
-   
 }
