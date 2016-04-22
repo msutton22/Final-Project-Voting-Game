@@ -38,24 +38,24 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             info.player4 = String(p4TextField.text!)
             info.player5 = String(p5TextField.text!)
             performSegueWithIdentifier("titleToQuestions", sender: self)
-            }
+    }
         }
     
     @IBAction func aboutThisGameButton(sender: AnyObject) {
         info.player1 = String(p1TextField.text!)
         info.player2 = String(p2TextField.text!)
-        info.player3 = String(p3TextField.text!)
+       info.player3 = String(p3TextField.text!)
         info.player4 = String(p4TextField.text!)
-        info.player5 = String(p5TextField.text!)
+       info.player5 = String(p5TextField.text!)
         performSegueWithIdentifier("toInstruct", sender: self)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if segue.identifier == "titleToQuestions" {
-            let dvc = segue.destinationViewController as! QuestionViewController
-            dvc.info = self.info
-        }
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            if segue.identifier == "titleToQuestions" {
+                let dvc = segue.destinationViewController as! QuestionViewController
+                dvc.info = self.info
+
+    }
             
         else if segue.identifier == "toInstruct" {
             let dvc = segue.destinationViewController as! InstructionsViewController
@@ -76,6 +76,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
    //     }
    // }
 
+    
+ }
     
 }
 
