@@ -21,13 +21,9 @@ class EndScreenViewController: UIViewController {
     }
 
     @IBAction func startOver(sender: AnyObject) {
-    performSegueWithIdentifier("EndToStart", sender: self)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! ViewController
-         dvc.info = self.info
-    }
+        performSegueWithIdentifier("EndToStart", sender: self)
+        
+        }
     
     func overallWinner() {
         if info.player1won == info.player2won && (info.player1won * 3) > (info.player3won + info.player4won + info.player5won) {
