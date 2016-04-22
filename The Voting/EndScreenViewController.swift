@@ -11,7 +11,8 @@ import UIKit
 class EndScreenViewController: UIViewController {
     
     @IBOutlet weak var endScreenLabel: UILabel!
-     var info = Information()
+    
+    var info = Information()
     
     override func viewDidLoad() {
         super.viewDidLoad()
