@@ -67,7 +67,15 @@ class Information: NSObject {
                      "check DisneyChannel.com without their parent's permission",
                      "go skydiving",
                      "be the coolest supervillain",
-                     "be the lamest superhero"
+                     "be the lamest superhero",
+                     "lose their kid in a supermarket",
+                     "be the kid to get lost in a supermarket",
+                     "kill everyplant they own",
+                     "boil water and burn it",
+                     "go scubadiving",
+                     "punch a shark",
+                     "get lost in a corn maze and cry",
+                     "fall asleep first at a sleep over"
                      ]
 
    

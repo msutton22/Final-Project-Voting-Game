@@ -27,6 +27,7 @@ class EndScreenViewController: UIViewController {
         let dvc = segue.destinationViewController as! ViewController
         dvc.info = self.info
     }
+    
     func overallWinner() {
         if info.player1won == info.player2won && (info.player1won * 3) > (info.player3won + info.player4won + info.player5won) {
             endScreenLabel.text = "Its a tie. No one wanted to throw someone under the bus"
@@ -75,5 +76,4 @@ class EndScreenViewController: UIViewController {
         }
     }
 
-    
-   }
+}
