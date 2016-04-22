@@ -96,7 +96,7 @@ class QuestionViewController: UIViewController {
   
     func chooseQuestion() {
     let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
-    questionLabel.text = "Who is most likely to \(info.questions[randomIndex])"
+    questionLabel.text = "Who would \(info.questions[randomIndex])?"
         
     }
     func results(winner: String) {
@@ -125,43 +125,43 @@ class QuestionViewController: UIViewController {
         
         if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player3Tapped && (player1Tapped * 3) > (player2Tapped + player4Tapped + player5Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player4Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player5Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player5Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player4Tapped){
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player3Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player5Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player4Tapped && (player2Tapped * 3) > (player1Tapped + player3Tapped + player5Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player5Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player3Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player3Tapped == player4Tapped && (player3Tapped * 3) > (player1Tapped + player2Tapped + player5Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player3Tapped == player5Tapped && (player3Tapped * 3) > (player1Tapped + player4Tapped + player2Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
         else if player4Tapped == player5Tapped && (player4Tapped * 3) > (player1Tapped + player2Tapped + player3Tapped) {
             info.noPlayerWon == ++info.noPlayerWon
-            results("Its a tie. No one wanted to throw someone under the bus")
+            results("Its a tie. No one was thrown under the bus")
         }
 
        else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
