@@ -14,8 +14,6 @@ class InstructionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
     @IBAction func backButton(sender: AnyObject) {
@@ -26,6 +24,4 @@ class InstructionsViewController: UIViewController {
             let dvc = segue.destinationViewController as! ViewController
             dvc.info = self.info
     }
-
-   
 }

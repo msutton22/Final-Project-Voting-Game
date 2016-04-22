@@ -29,7 +29,7 @@ class Information: NSObject {
                      "be able to live out of the country",
                      "move in with their parents at 50",
                      "become a reality TV star",
-                     "flirt at a bar",
+                     "flirt with a hobo at a bar",
                      "put their literal foot in their mounth",
                      "have to most annoying kids",
                      "be late to their own wedding",
@@ -44,7 +44,7 @@ class Information: NSObject {
                      "drown in a kiddie pool",
                      "go skinny dipping in the kiddie pool",
                      "get lost in the woods",
-                     "try and high five a blind person",
+                     "try to high-five a blind person",
                      "steal candy from a baby",
                      "crash on your couch",
                      "become a comedian",
@@ -67,7 +67,15 @@ class Information: NSObject {
                      "check DisneyChannel.com without their parent's permission",
                      "go skydiving",
                      "be the coolest supervillain",
-                     "be the lamest superhero"
+                     "be the lamest superhero",
+                     "lose their kid in a supermarket",
+                     "be the kid to get lost in a supermarket",
+                     "kill everyplant they own",
+                     "boil water and burn it",
+                     "go scubadiving",
+                     "punch a shark",
+                     "get lost in a corn maze and cry",
+                     "fall asleep first at a sleep over"
                      ]
 
    
