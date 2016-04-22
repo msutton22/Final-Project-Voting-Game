@@ -23,10 +23,10 @@ class EndScreenViewController: UIViewController {
     @IBAction func startOver(sender: AnyObject) {
     performSegueWithIdentifier("EndToStart", sender: self)
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! ViewController
-        dvc.info = self.info
+         dvc.info = self.info
     }
     
     func overallWinner() {
