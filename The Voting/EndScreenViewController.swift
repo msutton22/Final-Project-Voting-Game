@@ -21,8 +21,8 @@ class EndScreenViewController: UIViewController {
     }
 
     @IBAction func startOver(sender: AnyObject) {
-    performSegueWithIdentifier("EndToStart", sender: self)
-    }
+        performSegueWithIdentifier("EndToStart", sender: self)
+        }
     
     
     func overallWinner() {
