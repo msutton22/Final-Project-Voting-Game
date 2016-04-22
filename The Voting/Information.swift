@@ -21,6 +21,7 @@ class Information: NSObject {
     var player3won = 0
     var player4won = 0
     var player5won = 0
+    var noPlayerWon = 0
  
     var questions = ["have the hardest time talking their way out of an insane asylum",
                      "get convicted of a crime they didn't commit",
@@ -54,7 +55,7 @@ class Information: NSObject {
                      "have an emotional breakdown in public",
                      "drop their phone in a the toilet",
                      "actually survive the hunger games",
-                     "know everysong from One Direction",
+                     "know every song from One Direction",
                      "lose the winning loto ticket",
                      "be on the bachlorette",
                      "walk outside in their pajamas",
