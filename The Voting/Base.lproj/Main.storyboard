@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -18,22 +18,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 3's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgt-8x-gEN">
-                                <rect key="frame" x="97" y="125" width="126" height="30"/>
+                                <rect key="frame" x="97" y="136" width="126" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBk-nQ-H1S">
-                                <rect key="frame" x="97" y="87" width="126" height="30"/>
+                                <rect key="frame" x="97" y="98" width="126" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 4's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftP-IA-0Pj">
-                                <rect key="frame" x="97" y="163" width="126" height="30"/>
+                                <rect key="frame" x="97" y="174" width="126" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 5's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjj-vc-AQx">
-                                <rect key="frame" x="97" y="200" width="126" height="30"/>
+                                <rect key="frame" x="97" y="212" width="126" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -44,11 +44,6 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZa-Ad-QKp">
-                                <rect key="frame" x="97" y="49" width="126" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-FL-evJ">
                                 <rect key="frame" x="36" y="327" width="249" height="30"/>
                                 <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="27"/>
@@ -79,6 +74,11 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZa-Ad-QKp">
+                                <rect key="frame" x="97" y="60" width="126" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -88,9 +88,17 @@
                             <constraint firstItem="VZa-Ad-QKp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ty-C3-qCM"/>
                             <constraint firstItem="dgt-8x-gEN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Xk-U4-oas"/>
                             <constraint firstItem="Exp-VI-YTd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bvt-iY-zKq"/>
+                            <constraint firstItem="ftP-IA-0Pj" firstAttribute="top" secondItem="dgt-8x-gEN" secondAttribute="bottom" constant="8" id="HfZ-ZL-2rK"/>
+                            <constraint firstItem="qBk-nQ-H1S" firstAttribute="top" secondItem="VZa-Ad-QKp" secondAttribute="bottom" constant="8" id="K2z-wC-Q0M"/>
                             <constraint firstItem="ykL-TT-Vfr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KhL-wx-El0"/>
+                            <constraint firstItem="dgt-8x-gEN" firstAttribute="top" secondItem="qBk-nQ-H1S" secondAttribute="bottom" constant="8" id="Kme-hh-4Uu"/>
                             <constraint firstItem="qBk-nQ-H1S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDE-Nw-3OT"/>
+                            <constraint firstItem="dgt-8x-gEN" firstAttribute="top" secondItem="qBk-nQ-H1S" secondAttribute="bottom" constant="8" id="Vz9-t6-gWZ"/>
+                            <constraint firstItem="wjj-vc-AQx" firstAttribute="top" secondItem="ftP-IA-0Pj" secondAttribute="bottom" constant="8" id="ZYp-cv-2gJ"/>
+                            <constraint firstItem="ftP-IA-0Pj" firstAttribute="top" secondItem="dgt-8x-gEN" secondAttribute="bottom" constant="8" id="gAD-qX-FOB"/>
+                            <constraint firstItem="qBk-nQ-H1S" firstAttribute="top" secondItem="VZa-Ad-QKp" secondAttribute="bottom" constant="8" id="m5E-oJ-eGP"/>
                             <constraint firstItem="bBJ-FL-evJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="smD-5M-0RU"/>
+                            <constraint firstItem="wjj-vc-AQx" firstAttribute="top" secondItem="ftP-IA-0Pj" secondAttribute="bottom" constant="8" id="y8A-mq-VAB"/>
                         </constraints>
                     </view>
                     <connections>
