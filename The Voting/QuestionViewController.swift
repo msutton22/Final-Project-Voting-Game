@@ -41,29 +41,29 @@ class QuestionViewController: UIViewController {
     
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
-      ++player1Tapped
+      player1Tapped += 1
      
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
        master()
-       ++player2Tapped
+       player2Tapped += 1
        
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         master()
-        ++player3Tapped
+        player3Tapped += 1
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
        master()
-        ++player4Tapped
+        player4Tapped += 1
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         master()
-        ++player5Tapped
+        player5Tapped += 1
     }
     
     func master () {
