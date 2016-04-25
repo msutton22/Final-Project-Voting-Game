@@ -27,7 +27,6 @@ class QuestionViewController: UIViewController {
     var player4Tapped = 0
     var player5Tapped = 0
     
-    
         override func viewDidLoad() {
         super.viewDidLoad()
             master()
@@ -42,13 +41,11 @@ class QuestionViewController: UIViewController {
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
        player1Tapped += 1
-     
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
        master()
        player2Tapped += 1
-       
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
@@ -124,7 +121,6 @@ class QuestionViewController: UIViewController {
     }
     
     func winner() {
-        
         if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
             info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
@@ -165,7 +161,6 @@ class QuestionViewController: UIViewController {
             info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
-
        else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
         {
             info.player1won += 1
@@ -182,7 +177,7 @@ class QuestionViewController: UIViewController {
         else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
             info.player4won += 1
             results("\(info.player4)")
-      }
+        }
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
             info.player5won += 1
             results("\(info.player5)")
