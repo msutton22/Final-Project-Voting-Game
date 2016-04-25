@@ -126,15 +126,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
-                                <rect key="frame" x="45" y="128" width="247" height="245"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
+                                <rect key="frame" x="0.0" y="78" width="320" height="382"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">CREATED BY BITS PLEASE Instructions: Enter the names of 5 people. Next you will be presented a question in which all of you will have to choose among your friends who best fits the scenario given. After each player has voted the results will appear. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-au-TO5">
-                                <rect key="frame" x="129" y="399" width="79" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-au-TO5">
+                                <rect key="frame" x="121" y="414" width="79" height="75"/>
                                 <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="45"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,8 +145,15 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" identifier="backToStart" modalTransitionStyle="crossDissolve" id="cbo-IZ-cOu"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cartoon-school-bus_99190" translatesAutoresizingMaskIntoConstraints="NO" id="Nk0-yF-CO4">
+                                <rect key="frame" x="134" y="456" width="130" height="112"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zqg-sE-2Z5" firstAttribute="centerX" secondItem="Mnm-eB-Luq" secondAttribute="centerX" id="US9-i2-pU5"/>
+                            <constraint firstItem="7v9-au-TO5" firstAttribute="centerX" secondItem="Mnm-eB-Luq" secondAttribute="centerX" id="q9j-Gp-fXs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dVb-ne-wHV"/>
                 </viewController>
@@ -311,9 +318,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cartoon-school-bus_99190" width="320" height="320"/>
         <image name="under-the-bus" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJR-kZ-o4C"/>
+        <segue reference="cbo-IZ-cOu"/>
     </inferredMetricsTieBreakers>
 </document>

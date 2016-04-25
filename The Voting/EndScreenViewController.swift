@@ -26,52 +26,24 @@ class EndScreenViewController: UIViewController {
         }
     
     func overallWinner() {
-        if info.player1won == info.player2won && (info.player1won * 3) > (info.player3won + info.player4won + info.player5won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
+        if info.noPlayerWon > (info.player1won + info.player2won + info.player3won + info.player4won + info.player5won)
+        {
+            endScreenLabel.text = "No one was thrown under the bus"
         }
-        else if info.player1won == info.player3won && (info.player1won * 3) > (info.player2won + info.player4won + info.player5won) {
-            endScreenLabel.text = "Its a tie. No one was thrown someone under the bus"
+        else if info.player1won  > (info.player4won + info.player2won +  info.player3won + info.player5won) {
+            endScreenLabel.text = "\(info.player1) is the person that is most likely to be thrown under the bus"
         }
-        else if info.player1won == info.player4won && (info.player1won * 3) > (info.player2won + info.player3won + info.player5won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
+        else if info.player2won  > (info.player1won + info.player4won + info.player3won + info.player5won) {
+            endScreenLabel.text = "\(info.player2) is the person that is most likely to be thrown under the bus"
         }
-        else if info.player1won == info.player5won && (info.player1won * 3) > (info.player2won + info.player3won + info.player4won){
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
+        else if info.player3won > (info.player1won + info.player2won + info.player4won + info.player5won) {
+            endScreenLabel.text = "\(info.player3)is the person that is most likely to be thrown under the bus"
         }
-        else if info.player2won == info.player3won && (info.player2won * 3) > (info.player1won + info.player4won + info.player5won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
+        else if info.player4won > (info.player1won + info.player2won + info.player3won + info.player5won) {
+            endScreenLabel.text = "\(info.player4) is the person that is most likely to be thrown under the bus"
         }
-        else if info.player2won == info.player4won && (info.player2won * 3) > (info.player1won + info.player3won + info.player5won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
-        }
-        else if info.player2won == info.player5won && (info.player2won * 3) > (info.player1won + info.player4won + info.player3won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
-        }
-        else if info.player3won == info.player4won && (info.player3won * 3) > (info.player1won + info.player2won + info.player5won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
-        }
-        else if info.player3won == info.player5won && (info.player3won * 3) > (info.player1won + info.player4won + info.player2won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
-        }
-        else if info.player4won == info.player5won && (info.player4won * 3) > (info.player1won + info.player2won + info.player3won) {
-            endScreenLabel.text = "Its a tie. No one was thrown under the bus"
-        }
-            
-        else if (info.player1won * 4) > (info.player4won + info.player2won + info.player3won + info.player5won) {
-            endScreenLabel.text = " \(info.player1) was thrown under the bus"
-        }
-        else if (info.player2won * 4) > (info.player1won + info.player4won + info.player3won + info.player5won) {
-            endScreenLabel.text = " \(info.player2) was thrown under the bus"
-        }
-        else if (info.player3won * 4) > (info.player1won + info.player2won + info.player4won + info.player5won) {
-            endScreenLabel.text = " \(info.player3) was thrown under the bus"
-        }
-        else if (info.player4won * 4) > (info.player1won + info.player2won + info.player3won + info.player5won) {
-            endScreenLabel.text = " \(info.player4) was thrown under the bus"
-        }
-        else if (info.player5won * 4) > (info.player1won + info.player2won + info.player3won + info.player4won) {
-            endScreenLabel.text = " \(info.player5) was thrown under the bus"
+        else if info.player5won  > (info.player1won + info.player2won + info.player3won + info.player4won) {
+            endScreenLabel.text = "\(info.player5) is the person that is most likely to be thrown under the bus"
         }
     }
-
 }
