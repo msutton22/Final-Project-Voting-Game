@@ -122,6 +122,10 @@ class QuestionViewController: UIViewController {
             presentViewController(alert, animated: true, completion: nil)
         }
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! EndScreenViewController
+            dvc.info = self.info
+    }
 
     func winner() {
         
