@@ -290,10 +290,14 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" identifier="EndToStart" id="iJR-kZ-o4C"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="under-the-bus" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-qu-jof">
+                                <rect key="frame" x="52" y="260" width="217" height="191"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="V0a-ib-4OD" firstAttribute="centerX" secondItem="GZm-yh-DDp" secondAttribute="centerX" id="3o2-ur-aLk"/>
+                            <constraint firstItem="9Ra-qu-jof" firstAttribute="centerX" secondItem="GZm-yh-DDp" secondAttribute="centerX" id="FnM-qF-6f2"/>
                             <constraint firstItem="LU1-Jp-X4t" firstAttribute="centerX" secondItem="GZm-yh-DDp" secondAttribute="centerX" id="cyz-TQ-XEq"/>
                         </constraints>
                     </view>
@@ -306,6 +310,9 @@
             <point key="canvasLocation" x="713" y="1046"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="under-the-bus" width="480" height="480"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="iJR-kZ-o4C"/>
     </inferredMetricsTieBreakers>
