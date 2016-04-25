@@ -42,26 +42,31 @@ class QuestionViewController: UIViewController {
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
       ++player1Tapped
+      ++info.player1won
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
        master()
        ++player2Tapped
+        ++info.player2won
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         master()
         ++player3Tapped
+        ++info.player3won
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
        master()
         ++player4Tapped
+        ++info.player4won
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         master()
         ++player5Tapped
+        ++info.player5won
     }
     
     func master () {
@@ -166,23 +171,18 @@ class QuestionViewController: UIViewController {
 
        else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
         {
-            info.player1won == ++info.player1won
          results("\(info.player1)")
         }
         else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
-            info.player2won == ++info.player2won
          results("\(info.player2)")
         }
         else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
-            info.player3won == ++info.player3won
             results("\(info.player3)")
         }
         else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
-            info.player4won == ++info.player4won
             results("\(info.player4)")
       }
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
-            info.player5won == ++info.player5won
             results("\(info.player5)")
       }
     }
