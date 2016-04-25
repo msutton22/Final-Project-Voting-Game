@@ -122,11 +122,7 @@ class QuestionViewController: UIViewController {
             presentViewController(alert, animated: true, completion: nil)
         }
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! EndScreenViewController
-            dvc.info = self.info
-    }
-
+    
     func winner() {
         
         if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
@@ -193,4 +189,9 @@ class QuestionViewController: UIViewController {
       }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! EndScreenViewController
+        dvc.info = self.info
+    }
+
 }
