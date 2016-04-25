@@ -54,7 +54,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         performSegueWithIdentifier("toInstruct", sender: self)
     }
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "titleToQuestions" {
+            if segue.identifier == "titleToQuestions" {
                 let dvc = segue.destinationViewController as! QuestionViewController
                dvc.info = self.info
 
