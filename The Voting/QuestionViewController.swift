@@ -41,31 +41,32 @@ class QuestionViewController: UIViewController {
     
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
-      ++player1Tapped
+      player1Tapped += 1
+        
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
        master()
-       ++player2Tapped
+       player2Tapped += 1
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         master()
-        ++player3Tapped
+        player3Tapped += 1
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
        master()
-        ++player4Tapped
+        player4Tapped += 1
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         master()
-        ++player5Tapped
+        player5Tapped += 1
     }
     
     func master () {
-        ++playerTurn
+        playerTurn += 1
         playerColor()
         winner()
     }
@@ -124,65 +125,65 @@ class QuestionViewController: UIViewController {
     func winner() {
         
         if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player3Tapped && (player1Tapped * 3) > (player2Tapped + player4Tapped + player5Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player4Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player5Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player5Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player4Tapped){
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player3Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player5Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player4Tapped && (player2Tapped * 3) > (player1Tapped + player3Tapped + player5Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player5Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player3Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player3Tapped == player4Tapped && (player3Tapped * 3) > (player1Tapped + player2Tapped + player5Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player3Tapped == player5Tapped && (player3Tapped * 3) > (player1Tapped + player4Tapped + player2Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
         else if player4Tapped == player5Tapped && (player4Tapped * 3) > (player1Tapped + player2Tapped + player3Tapped) {
-            info.noPlayerWon == ++info.noPlayerWon
+            info.noPlayerWon == 1 + info.noPlayerWon
             results("Its a tie. No one was thrown under the bus")
         }
 
        else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
         {
-            info.player1won == ++info.player1won
+            info.player1won == 1 + info.player1won
          results("\(info.player1)")
         }
         else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
-            info.player2won == ++info.player2won
+            info.player2won == 1 + info.player2won
          results("\(info.player2)")
         }
         else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
-            info.player3won == ++info.player3won
+            info.player3won == 1 + info.player3won
             results("\(info.player3)")
         }
         else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
-            info.player4won == ++info.player4won
+            info.player4won == 1 + info.player4won
             results("\(info.player4)")
       }
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
-            info.player5won == ++info.player5won
+            info.player5won == 1 + info.player5won
             results("\(info.player5)")
       }
     }
