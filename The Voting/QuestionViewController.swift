@@ -42,7 +42,6 @@ class QuestionViewController: UIViewController {
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
       player1Tapped += 1
-        
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
@@ -96,8 +95,8 @@ class QuestionViewController: UIViewController {
     }
   
     func chooseQuestion() {
-    let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
-    questionLabel.text = "Who would \(info.questions[randomIndex])?"
+        let randomIndex = Int(arc4random_uniform(UInt32(info.questions.count)))
+        questionLabel.text = "Who would \(info.questions[randomIndex])?"
     }
     
     func results(winner: String) {
