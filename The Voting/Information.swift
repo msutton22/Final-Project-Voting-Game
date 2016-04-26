@@ -21,7 +21,6 @@ class Information: NSObject {
     var player3won = 0
     var player4won = 0
     var player5won = 0
-    var noPlayerWon = 0
  
     var questions = ["have the hardest time talking their way out of an insane asylum",
                      "get convicted of a crime they didn't commit",

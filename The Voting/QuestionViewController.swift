@@ -122,43 +122,53 @@ class QuestionViewController: UIViewController {
     
     func winner() {
         if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player1won += 1
+            info.player2won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player3Tapped && (player1Tapped * 3) > (player2Tapped + player4Tapped + player5Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player1won += 1
+            info.player3won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player4Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player5Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player1won += 1
+            info.player4won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player5Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player4Tapped){
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player1won += 1
+            info.player2won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player3Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player5Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player2won += 1
+            info.player3won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player4Tapped && (player2Tapped * 3) > (player1Tapped + player3Tapped + player5Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player2won += 1
+            info.player4won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player2Tapped == player5Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player3Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player2won += 1
+            info.player5won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player3Tapped == player4Tapped && (player3Tapped * 3) > (player1Tapped + player2Tapped + player5Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player3won += 1
+            info.player4won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player3Tapped == player5Tapped && (player3Tapped * 3) > (player1Tapped + player4Tapped + player2Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player3won += 1
+            info.player5won += 1
             results("Its a tie. No one was thrown under the bus")
         }
         else if player4Tapped == player5Tapped && (player4Tapped * 3) > (player1Tapped + player2Tapped + player3Tapped) {
-            info.noPlayerWon == 1 + info.noPlayerWon
+            info.player4won += 1
+            info.player5won += 1
             results("Its a tie. No one was thrown under the bus")
         }
        else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
