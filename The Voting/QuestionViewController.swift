@@ -89,7 +89,7 @@ class QuestionViewController: UIViewController {
         }
         else if playerTurn == 5 {
             view.backgroundColor = UIColor.purpleColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player5)'s turn Choose a friend, then pass on to the next player."
+            playerTurnIdentifierLabel.text = "It's \(info.player5)'s turn! Choose a friend, then pass on to the next player."
         }
     }
   
