@@ -28,22 +28,22 @@ class EndScreenViewController: UIViewController {
     func overallWinner() {
         if info.noPlayerWon > (info.player1won + info.player2won + info.player3won + info.player4won + info.player5won)
         {
-            endScreenLabel.text = "It's a tie. No one was thrown under the bus."
+            endScreenLabel.text = "It's a tie. No one was thrown under the bus the most!"
         }
         else if info.player1won > (info.player4won + info.player2won +  info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player1) was thrown under the bus"
+            endScreenLabel.text = "\(info.player1) was thrown under the bus the most!"
         }
         else if info.player2won > (info.player1won + info.player4won + info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player2) was thrown under the bus"
+            endScreenLabel.text = "\(info.player2) was thrown under the bus the most!"
         }
         else if info.player3won > (info.player1won + info.player2won + info.player4won + info.player5won) {
-            endScreenLabel.text = "\(info.player3) was thrown under the bus"
+            endScreenLabel.text = "\(info.player3) was thrown under the bus the most!"
         }
         else if info.player4won > (info.player1won + info.player2won + info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player4) was thrown under the bus"
+            endScreenLabel.text = "\(info.player4) was thrown under the bus the most!"
         }
         else if info.player5won > (info.player1won + info.player2won + info.player3won + info.player4won) {
-            endScreenLabel.text = "\(info.player5) was thrown under the bus"
+            endScreenLabel.text = "\(info.player5) was thrown under the bus the most!"
         }
     }
 }
