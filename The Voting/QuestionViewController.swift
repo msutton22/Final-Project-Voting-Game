@@ -198,5 +198,4 @@ class QuestionViewController: UIViewController {
         let dvc = segue.destinationViewController as! EndScreenViewController
         dvc.info = self.info
     }
-
 }

@@ -17,12 +17,10 @@ class EndScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         overallWinner()
-
     }
 
     @IBAction func startOver(sender: AnyObject) {
         performSegueWithIdentifier("EndToStart", sender: self)
-        
         }
     
     func overallWinner() {
@@ -57,7 +55,6 @@ class EndScreenViewController: UIViewController {
         else if info.player4won == info.player5won && (info.player2won * 3) > (info.player1won + info.player2won + info.player3won) {
             endScreenLabel.text = "\(info.player4) and \(info.player5) were thrown under the bus"
         }
-            
         else if info.player1won > (info.player4won + info.player2won +  info.player3won + info.player5won) {
             endScreenLabel.text = "\(info.player1) was thrown under the bus the most!"
         }
