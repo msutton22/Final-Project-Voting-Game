@@ -78,5 +78,5 @@ class Information: NSObject {
                      "to lose a bike race to a third grader",
                      "have had the worst case of senioritis in high school",
                      "to dress as a provocative pirate for halloween"
-                     ]    
+                     ]
 }
