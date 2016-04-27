@@ -21,11 +21,10 @@ class Information: NSObject {
     var player3won = 0
     var player4won = 0
     var player5won = 0
-    var noPlayerWon = 0
  
-    var questions = ["have the hardest time talking their way out of an insane asylum",
+    var questions = [
                      "get convicted of a crime they didn't commit",
-                     "get upset while playing Monopoly",
+                     "become competitive while playing Monopoly",
                      "be able to live out of the country",
                      "move in with their parents at 50",
                      "become a reality TV star",
@@ -46,9 +45,8 @@ class Information: NSObject {
                      "get lost in the woods",
                      "try to high-five a blind person",
                      "steal candy from a baby",
-                     "crash on your couch at 4 am",
+                     "crash on your couch at 4 A.M.",
                      "become a comedian on SNL",
-                     "lose an election because of something they did in high school",
                      "get into a fight with a grandma and lose",
                      "be caught sleeping on the job",
                      "die first in a zombie apocolypse",
@@ -63,25 +61,21 @@ class Information: NSObject {
                      "have a first date at a fast food place",
                      "total their new car",
                      "fail their drivers test twelve times",
-                     "scream when they see a bug",
+                     "scream when they see a spider",
                      "check DisneyChannel.com without their parent's permission",
                      "go skydiving",
                      "be the coolest supervillain",
                      "be the lamest superhero",
-                     "be able to eat an actual horse",
+                     "be able to eat an actual horse right now",
                      "get attacked by geese in a park",
-                     "be a ninja extra in the next Hollywood blockbuster",
+                     "be a ninja in the next Hollywood blockbuster",
                      "be the water boy at a football game",
                      "become a beauty vlogger",
-                     "to hibernate in the winter",
+                     "hibernate in the winter",
                      "vomit after riding a rollercoaster",
-                     "to be hit by a school bus",
-                     "to lose a bike race to a third grader",
+                     "be run over by a school bus",
+                     "lose a bike race to a third grader",
                      "have had the worst case of senioritis in high school",
-                     "to dress as a provocative pirate for halloween"
+                     "dress as a provocative pirate for halloween"
                      ]
-
-   
-
-    
 }
