@@ -25,7 +25,22 @@ class EndScreenViewController: UIViewController {
     
     func overallWinner() {
         
-        if  info.player1won == info.player2won && (info.player1won * 3) > (info.player3won + info.player4won + info.player5won){
+        if info.player1won > (info.player4won + info.player2won +  info.player3won + info.player5won) {
+            endScreenLabel.text = "\(info.player1) was thrown under the bus the most!"
+        }
+        else if info.player2won > (info.player1won + info.player4won + info.player3won + info.player5won) {
+            endScreenLabel.text = "\(info.player2) was thrown under the bus the most!"
+        }
+        else if info.player3won > (info.player1won + info.player2won + info.player4won + info.player5won) {
+            endScreenLabel.text = "\(info.player3) was thrown under the bus the most!"
+        }
+        else if info.player4won > (info.player1won + info.player2won + info.player3won + info.player5won) {
+            endScreenLabel.text = "\(info.player4) was thrown under the bus the most!"
+        }
+        else if info.player5won > (info.player1won + info.player2won + info.player3won + info.player4won) {
+            endScreenLabel.text = "\(info.player5) was thrown under the bus the most!"
+        }
+        else if  info.player1won == info.player2won && (info.player1won * 3) > (info.player3won + info.player4won + info.player5won){
             endScreenLabel.text = "\(info.player1) and \(info.player2) were thrown under the bus the most!"
         }
         else if info.player1won == info.player3won && (info.player1won * 3) > (info.player2won + info.player4won + info.player5won) {
@@ -55,20 +70,6 @@ class EndScreenViewController: UIViewController {
         else if info.player4won == info.player5won && (info.player2won * 3) > (info.player1won + info.player2won + info.player3won) {
             endScreenLabel.text = "\(info.player4) and \(info.player5) were thrown under the bus the most!"
         }
-        else if info.player1won > (info.player4won + info.player2won +  info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player1) was thrown under the bus the most!"
-        }
-        else if info.player2won > (info.player1won + info.player4won + info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player2) was thrown under the bus the most!"
-        }
-        else if info.player3won > (info.player1won + info.player2won + info.player4won + info.player5won) {
-            endScreenLabel.text = "\(info.player3) was thrown under the bus the most!"
-        }
-        else if info.player4won > (info.player1won + info.player2won + info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player4) was thrown under the bus the most!"
-        }
-        else if info.player5won > (info.player1won + info.player2won + info.player3won + info.player4won) {
-            endScreenLabel.text = "\(info.player5) was thrown under the bus the most!"
-        }
+
     }
 }
