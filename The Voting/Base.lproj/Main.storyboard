@@ -131,12 +131,12 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
                                 <rect key="frame" x="0.0" y="78" width="320" height="382"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">CREATED BY BITS PLEASE Instructions: Enter the names of 5 people. Next you will be presented a question in which all of you will have to choose among your friends who best fits the scenario given. After each player has voted the results will appear. </string>
+                                <string key="text">CREATED BY BITS PLEASE           Instructions:                       Enter the names of 5 people. Next you will be presented a question in which all of you will have to choose among your friends who best fits the scenario given. After each player has voted the results will appear. </string>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-au-TO5">
-                                <rect key="frame" x="121" y="414" width="79" height="75"/>
+                                <rect key="frame" x="121" y="468" width="79" height="75"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <size key="titleShadowOffset" width="3" height="1"/>
                                 <state key="normal" title="BACK">
@@ -149,7 +149,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cartoon-school-bus_99190" translatesAutoresizingMaskIntoConstraints="NO" id="Nk0-yF-CO4">
-                                <rect key="frame" x="121" y="456" width="130" height="112"/>
+                                <rect key="frame" x="127" y="509" width="130" height="112"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-OP-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="1046"/>
+            <point key="canvasLocation" x="101" y="1046"/>
         </scene>
         <!--End Screen View Controller-->
         <scene sceneID="RAk-nM-QJr">
@@ -309,7 +309,7 @@
                                 <rect key="frame" x="52" y="260" width="217" height="191"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Was Thrown Under The Bus the Most!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LU1-Jp-X4t">
-                                <rect key="frame" x="93" y="20" width="207" height="134"/>
+                                <rect key="frame" x="93" y="20" width="227" height="134"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -337,6 +337,6 @@
         <image name="under-the-bus" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJR-kZ-o4C"/>
+        <segue reference="cbo-IZ-cOu"/>
     </inferredMetricsTieBreakers>
 </document>
