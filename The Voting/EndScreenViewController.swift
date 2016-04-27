@@ -24,7 +24,6 @@ class EndScreenViewController: UIViewController {
         }
     
     func overallWinner() {
-        
         if  info.player1won == info.player2won && (info.player1won * 3) > (info.player3won + info.player4won + info.player5won){
             endScreenLabel.text = "\(info.player1) and \(info.player2) were thrown under the bus the most!"
         }
