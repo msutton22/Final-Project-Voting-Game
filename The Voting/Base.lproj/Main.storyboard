@@ -149,7 +149,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cartoon-school-bus_99190" translatesAutoresizingMaskIntoConstraints="NO" id="Nk0-yF-CO4">
-                                <rect key="frame" x="-7" y="456" width="130" height="112"/>
+                                <rect key="frame" x="121" y="456" width="130" height="112"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -336,6 +336,6 @@
         <image name="under-the-bus" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJR-kZ-o4C"/>
+        <segue reference="cbo-IZ-cOu"/>
     </inferredMetricsTieBreakers>
 </document>
