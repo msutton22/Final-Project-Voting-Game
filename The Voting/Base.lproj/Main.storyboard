@@ -292,8 +292,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="under-the-bus" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-qu-jof">
+                                <rect key="frame" x="52" y="260" width="217" height="191"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=" Was Thrown Under The Bus the Most!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LU1-Jp-X4t">
+                                <rect key="frame" x="20" y="44" width="280" height="86"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0a-ib-4OD">
-                                <rect key="frame" x="98" y="186" width="158" height="66"/>
+                                <rect key="frame" x="81" y="186" width="158" height="66"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <size key="titleShadowOffset" width="3" height="0.0"/>
                                 <state key="normal" title="START OVER">
@@ -305,15 +314,6 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" identifier="EndToStart" id="iJR-kZ-o4C"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="under-the-bus" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-qu-jof">
-                                <rect key="frame" x="52" y="260" width="217" height="191"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=" Was Thrown Under The Bus the Most!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LU1-Jp-X4t">
-                                <rect key="frame" x="10" y="44" width="300" height="86"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -336,6 +336,6 @@
         <image name="under-the-bus" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cbo-IZ-cOu"/>
+        <segue reference="iJR-kZ-o4C"/>
     </inferredMetricsTieBreakers>
 </document>
