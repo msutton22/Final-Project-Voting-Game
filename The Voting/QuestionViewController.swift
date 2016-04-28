@@ -70,7 +70,6 @@ class QuestionViewController: UIViewController {
     }
     
     func playerColor() {
-        
         if playerTurn == 1 {
             view.backgroundColor = UIColor.redColor()
             playerTurnIdentifierLabel.text = "It's \(info.player1)'s turn! Choose a friend, then pass on to the next player."
@@ -100,12 +99,6 @@ class QuestionViewController: UIViewController {
     
     func results(winner: String) {
         if playerTurn == 6 {
-            playerTurn = 0
-            player1Tapped = 0
-            player2Tapped = 0
-            player3Tapped = 0
-            player4Tapped = 0
-            player5Tapped = 0
             let alert = UIAlertController(title: winner, message: nil, preferredStyle: .Alert)
             let alertAction = UIAlertAction(title: "Next", style : .Default) { (action) -> Void in
                 self.master()
@@ -117,6 +110,12 @@ class QuestionViewController: UIViewController {
             })
             alert.addAction(cancelAction)
             presentViewController(alert, animated: true, completion: nil)
+            playerTurn = 0
+            player1Tapped = 0
+            player2Tapped = 0
+            player3Tapped = 0
+            player4Tapped = 0
+            player5Tapped = 0
         }
     }
     
