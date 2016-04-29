@@ -120,7 +120,11 @@ class QuestionViewController: UIViewController {
     }
     
     func winner() {
-        if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
+        if player1Tapped == player2Tapped && player2Tapped == player3Tapped && player2Tapped == player4Tapped && player2Tapped == player5Tapped
+         {
+            self.results("You all voted for different people. GET IT TOGETHER!")
+        }
+        else if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
             results("Its a tie. No one was thrown under the bus")
         }
         else if player1Tapped == player3Tapped && (player1Tapped * 3) > (player2Tapped + player4Tapped + player5Tapped) {
