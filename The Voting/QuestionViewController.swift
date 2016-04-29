@@ -172,7 +172,7 @@ class QuestionViewController: UIViewController {
             results("\(info.player5) was thrown under the bus")
         }
         else {
-                self.results("Its a tie. No one was thrown under the bus")
+                self.results("Its a tie. No one was thrown under the bus.")
             }
     }
     
