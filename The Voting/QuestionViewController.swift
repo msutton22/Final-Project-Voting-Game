@@ -173,23 +173,23 @@ class QuestionViewController: UIViewController {
        else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
         {
             info.player1won += 1
-            results("\(info.player1)")
+            results("\(info.player1) was thrown under the bus")
         }
         else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
             info.player2won += 1
-            results("\(info.player2)")
+            results("\(info.player2) was thrown under the bus")
         }
         else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
             info.player3won += 1
-            results("\(info.player3)")
+            results("\(info.player3) was thrown under the bus")
         }
         else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
             info.player4won += 1
-            results("\(info.player4)")
+            results("\(info.player4) was thrown under the bus")
         }
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
             info.player5won += 1
-            results("\(info.player5)")
+            results("\(info.player5) was thrown under the bus")
       }
     }
     
