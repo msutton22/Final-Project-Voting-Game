@@ -190,7 +190,10 @@ class QuestionViewController: UIViewController {
         else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
             info.player5won += 1
             results("\(info.player5) was thrown under the bus")
-      }
+        }
+        else {
+                self.results("Its a tie. No one was thrown under the bus")
+            }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
