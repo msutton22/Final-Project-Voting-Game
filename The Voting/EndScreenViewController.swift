@@ -40,7 +40,7 @@ class EndScreenViewController: UIViewController {
             endScreenLabel.text = "\(info.player5) was thrown under the bus the most!"
         }
         else {
-            endScreenLabel.text = "There were multiple people that were thrown under the bus"
+            endScreenLabel.text = "Everyone was thrown under the bus together!"
         }
 
         
