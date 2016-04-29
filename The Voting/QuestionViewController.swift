@@ -12,6 +12,7 @@ class QuestionViewController: UIViewController {
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var playerTurnIdentifierLabel: UILabel!
+    @IBOutlet weak var passThePhoneImage: UIImageView!
     
     @IBOutlet weak var player1Button: UIButton!
     @IBOutlet weak var player2Button: UIButton!

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -251,6 +251,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="school-bus-clipart-MKTjjygiq" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-gf-Flq">
                                 <rect key="frame" x="95" y="514" width="252" height="141"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pass the Phone logo-3" translatesAutoresizingMaskIntoConstraints="NO" id="dRn-ig-igm">
+                                <rect key="frame" x="-140" y="-162" width="657" height="971"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -269,6 +272,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CvQ-fZ-qOR"/>
                     <connections>
+                        <outlet property="passThePhoneImage" destination="dRn-ig-igm" id="9qm-bE-L0a"/>
                         <outlet property="player1Button" destination="JF5-kP-hyH" id="xdZ-Ir-DRg"/>
                         <outlet property="player2Button" destination="cdu-s9-FrE" id="nH5-s4-ea2"/>
                         <outlet property="player3Button" destination="daa-Hb-pch" id="U2z-XG-Qc5"/>
@@ -335,12 +339,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pass the Phone logo-3" width="960" height="720"/>
         <image name="cartoon-school-bus_99190" width="320" height="320"/>
         <image name="dfd6ec01abc7e6dff0d680c5fefb5f66" width="470" height="608"/>
         <image name="school-bus-clipart-MKTjjygiq" width="747" height="351"/>
         <image name="under-the-bus" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJR-kZ-o4C"/>
+        <segue reference="cbo-IZ-cOu"/>
     </inferredMetricsTieBreakers>
 </document>
