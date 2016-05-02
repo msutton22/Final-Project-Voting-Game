@@ -24,19 +24,19 @@ class EndScreenViewController: UIViewController {
         }
     
     func overallWinner() {
-        if (info.player1won * 4) > (info.player4won + info.player2won +  info.player3won + info.player5won) {
+        if (info.player1won * 4) > (info.player4won + info.player2won +  info.player3won + info.player5won) && info.player1won > info.player4won && info.player1won > info.player2won && info.player1won > info.player3won && info.player1won > info.player5won {
             endScreenLabel.text = "\(info.player1) was thrown under the bus the most!"
         }
-        else if (info.player2won * 4 ) > (info.player1won + info.player4won + info.player3won + info.player5won) {
+        else if (info.player2won * 4 ) > (info.player1won + info.player4won + info.player3won + info.player5won) && info.player2won > info.player4won && info.player2won > info.player1won && info.player2won > info.player3won && info.player2won > info.player5won {
             endScreenLabel.text = "\(info.player2) was thrown under the bus the most!"
         }
-        else if (info.player3won * 4) > (info.player1won + info.player2won + info.player4won + info.player5won) {
+        else if (info.player3won * 4) > (info.player1won + info.player2won + info.player4won + info.player5won) && info.player3won > info.player4won && info.player3won > info.player2won && info.player3won > info.player1won && info.player3won > info.player5won {
             endScreenLabel.text = "\(info.player3) was thrown under the bus the most!"
         }
-        else if (info.player4won * 4) > (info.player1won + info.player2won + info.player3won + info.player5won) {
+        else if (info.player4won * 4) > (info.player1won + info.player2won + info.player3won + info.player5won) && info.player4won > info.player1won && info.player4won > info.player2won && info.player4won > info.player3won && info.player4won > info.player5won {
             endScreenLabel.text = "\(info.player4) was thrown under the bus the most!"
         }
-        else if (info.player5won * 4) > (info.player1won + info.player2won + info.player3won + info.player4won) {
+        else if (info.player5won * 4) > (info.player1won + info.player2won + info.player3won + info.player4won) && info.player5won > info.player4won && info.player5won > info.player2won && info.player5won > info.player3won && info.player5won > info.player1won {
             endScreenLabel.text = "\(info.player5) was thrown under the bus the most!"
         }
         else {
