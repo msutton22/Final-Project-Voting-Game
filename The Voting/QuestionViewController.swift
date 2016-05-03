@@ -32,6 +32,7 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
             master()
             chooseQuestion()
+            passThePhoneImage.image = UIImage(named: "Phone")
             passThePhoneImage.hidden = true
             player1Button.setTitle(info.player1, forState: UIControlState.Normal)
             player2Button.setTitle(info.player2, forState: UIControlState.Normal)
@@ -46,9 +47,7 @@ class QuestionViewController: UIViewController {
     
         
         //var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector(timerAction()), userInfo: nil, repeats: true);
-        var image : UIImage = UIImage(named: "Phone")!
-        passThePhoneImage.image = UIImage(named: "Phone")
-        passThePhoneImage.hidden = false
+        // var image : UIImage = UIImage(named: "Phone")!
         
        // if timeCounter == 5 {
        //     timer.invalidate()
