@@ -27,17 +27,19 @@ class QuestionViewController: UIViewController {
     var player3Tapped = 0
     var player4Tapped = 0
     var player5Tapped = 0
-    
+    //var image : UIImage = UIImage(named: "Phone")!
+
         override func viewDidLoad() {
         super.viewDidLoad()
-            master()
-            chooseQuestion()
+            passThePhoneImage.image = UIImage(named: "Phone")!
             passThePhoneImage.hidden = true
             player1Button.setTitle(info.player1, forState: UIControlState.Normal)
             player2Button.setTitle(info.player2, forState: UIControlState.Normal)
             player3Button.setTitle(info.player3, forState: UIControlState.Normal)
             player4button.setTitle(info.player4, forState: UIControlState.Normal)
             player5Button.setTitle(info.player5, forState: UIControlState.Normal)
+            master()
+            chooseQuestion()
     }
     
     func timers() {
@@ -46,9 +48,7 @@ class QuestionViewController: UIViewController {
     
         
         //var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector(timerAction()), userInfo: nil, repeats: true);
-        var image : UIImage = UIImage(named: "Phone")!
-        passThePhoneImage.image = UIImage(named: "Phone")
-        passThePhoneImage.hidden = false
+        // var image : UIImage = UIImage(named: "Phone")!
         
        // if timeCounter == 5 {
        //     timer.invalidate()
@@ -61,33 +61,37 @@ class QuestionViewController: UIViewController {
     
     
     @IBAction func p1NameButton(sender: AnyObject) {
-       master()
+       timers()
+        master()
        player1Tapped += 1
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
-       master()
+       timers()
+        master()
        player2Tapped += 1
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
+        timers()
         master()
         player3Tapped += 1
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
-       master()
+       timers()
+        master()
        player4Tapped += 1
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
+        timers()
         master()
         player5Tapped += 1
     }
     
     func master () {
         playerTurn += 1
-        timers()
         playerColor()
         winner()
     }
