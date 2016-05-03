@@ -41,8 +41,8 @@ class QuestionViewController: UIViewController {
     }
     
     func timers() {
-        self.overlay.hidden = false
-        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.overlay.alpah = 0 }, completion: { finished in  self.overlay.hidden = true })
+        self.passThePhoneImage.hidden = false
+        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
     
         
         //var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector(timerAction()), userInfo: nil, repeats: true);
