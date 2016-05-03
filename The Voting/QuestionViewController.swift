@@ -63,34 +63,30 @@ class QuestionViewController: UIViewController {
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
        player1Tapped += 1
-        timers()
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
        master()
        player2Tapped += 1
-        timers()
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         master()
         player3Tapped += 1
-        timers()
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
        master()
        player4Tapped += 1
-        timers()
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         master()
         player5Tapped += 1
-        timers()
     }
     
     func master () {
+        timers()
         playerTurn += 1
         playerColor()
         winner()
