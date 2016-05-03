@@ -251,8 +251,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="school-bus-clipart-MKTjjygiq" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-gf-Flq">
                                 <rect key="frame" x="95" y="514" width="252" height="141"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pass the Phone logo-3" translatesAutoresizingMaskIntoConstraints="NO" id="dRn-ig-igm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRn-ig-igm">
                                 <rect key="frame" x="-140" y="-162" width="657" height="971"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -339,7 +340,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Pass the Phone logo-3" width="960" height="720"/>
         <image name="cartoon-school-bus_99190" width="320" height="320"/>
         <image name="dfd6ec01abc7e6dff0d680c5fefb5f66" width="470" height="608"/>
         <image name="school-bus-clipart-MKTjjygiq" width="747" height="351"/>
