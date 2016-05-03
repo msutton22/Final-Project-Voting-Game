@@ -87,8 +87,8 @@ class QuestionViewController: UIViewController {
     }
     
     func master () {
-        timers()
         playerTurn += 1
+        timers()
         playerColor()
         winner()
     }
