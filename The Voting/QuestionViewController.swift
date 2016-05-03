@@ -27,12 +27,13 @@ class QuestionViewController: UIViewController {
     var player3Tapped = 0
     var player4Tapped = 0
     var player5Tapped = 0
-    
+    var image : UIImage = UIImage(named: "Phone")!
+
         override func viewDidLoad() {
         super.viewDidLoad()
             master()
             chooseQuestion()
-            passThePhoneImage.image = UIImage(named: "Phone")
+            passThePhoneImage.image = UIImage(image)
             passThePhoneImage.hidden = true
             player1Button.setTitle(info.player1, forState: UIControlState.Normal)
             player2Button.setTitle(info.player2, forState: UIControlState.Normal)
