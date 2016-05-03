@@ -60,7 +60,6 @@ class QuestionViewController: UIViewController {
   //  }
     
     
-    
     @IBAction func p1NameButton(sender: AnyObject) {
        master()
        player1Tapped += 1
