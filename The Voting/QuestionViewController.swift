@@ -42,9 +42,9 @@ class QuestionViewController: UIViewController {
             chooseQuestion()
     }
     
-    func timers() {
-        self.passThePhoneImage.hidden = false
-        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
+    //func timers() {
+       // self.passThePhoneImage.hidden = false
+        //UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
     
         
         //var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector(timerAction()), userInfo: nil, repeats: true);
@@ -54,7 +54,7 @@ class QuestionViewController: UIViewController {
        //     timer.invalidate()
        //     passThePhoneImage.hidden = true
       //  }
-    }
+   // }
    // func timerAction() {
    //     timeCounter += 1
   //  }
@@ -62,33 +62,38 @@ class QuestionViewController: UIViewController {
     
     
     @IBAction func p1NameButton(sender: AnyObject) {
-       timers()
         master()
-       player1Tapped += 1
+        player1Tapped += 1
+        passThePhoneImage.hidden = !passThePhoneImage.hidden
+        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
-       timers()
         master()
-       player2Tapped += 1
+        player2Tapped += 1
+        passThePhoneImage.hidden = !passThePhoneImage.hidden
+        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
-        timers()
         master()
         player3Tapped += 1
+        passThePhoneImage.hidden = !passThePhoneImage.hidden
+        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
-       timers()
         master()
        player4Tapped += 1
+        passThePhoneImage.hidden = !passThePhoneImage.hidden
+        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
-        timers()
         master()
         player5Tapped += 1
+        passThePhoneImage.hidden = !passThePhoneImage.hidden
+        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
     }
     
     func master () {
