@@ -57,45 +57,40 @@ class QuestionViewController: UIViewController {
    // }
    // func timerAction() {
    //     timeCounter += 1
-  //  }
+    }
     
     
     @IBAction func p1NameButton(sender: AnyObject) {
         master()
         player1Tapped += 1
-        passThePhoneImage.hidden = !passThePhoneImage.hidden
-        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
+     
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
         master()
         player2Tapped += 1
-        passThePhoneImage.hidden = !passThePhoneImage.hidden
-        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
+       
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
         master()
         player3Tapped += 1
-        passThePhoneImage.hidden = !passThePhoneImage.hidden
-        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
+      
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
         master()
        player4Tapped += 1
-        passThePhoneImage.hidden = !passThePhoneImage.hidden
-        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
+        
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
         master()
         player5Tapped += 1
-        passThePhoneImage.hidden = !passThePhoneImage.hidden
-        UIView.animateWithDuration(2, delay:5, options:UIViewAnimationOptions.TransitionFlipFromTop, animations: {self.passThePhoneImage.alpha = 0 }, completion: { finished in  self.passThePhoneImage.hidden = true })
+        
     }
     
-    func master () {
+    func master() {
         playerTurn += 1
         playerColor()
         winner()
@@ -133,8 +128,6 @@ class QuestionViewController: UIViewController {
         if playerTurn == 6 {
             let alert = UIAlertController(title: winner, message: nil, preferredStyle: .Alert)
             let alertAction = UIAlertAction(title: "Next", style : .Default) { (action) -> Void in
-                self.master()
-                self.chooseQuestion()
             }
             alert.addAction(alertAction)
             let cancelAction = UIAlertAction(title: "Finish", style: .Default, handler: { (action) in
