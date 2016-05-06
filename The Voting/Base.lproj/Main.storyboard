@@ -12,10 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dfd6ec01abc7e6dff0d680c5fefb5f66" id="7d0-3W-H0T">
-                                <rect key="frame" x="-6" y="-15" width="427" height="757"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1's Name" textAlignment="natural" minimumFontSize="17" id="VZa-Ad-QKp">
                                 <rect key="frame" x="75" y="47" width="170" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
@@ -64,22 +60,6 @@
                                     <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAc-Wa-6an"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Bus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3A1-NL-mUB">
-                                <rect key="frame" x="70" y="439" width="181" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thrown Under" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Exp-VI-YTd">
-                                <rect key="frame" x="-23" y="395" width="367" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 4's Name" textAlignment="natural" minimumFontSize="17" id="ftP-IA-0Pj">
                                 <rect key="frame" x="75" y="179" width="170" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
@@ -126,10 +106,6 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartoon-school-bus_99190" id="Nk0-yF-CO4">
-                                <rect key="frame" x="127" y="509" width="130" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7v9-au-TO5">
                                 <rect key="frame" x="121" y="421" width="79" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
@@ -240,10 +216,6 @@
                                     <action selector="p3NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="puF-AH-8mm"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="school-bus-clipart-MKTjjygiq" id="jaH-gf-Flq">
-                                <rect key="frame" x="95" y="514" width="252" height="141"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dRn-ig-igm">
                                 <rect key="frame" x="-140" y="-162" width="657" height="971"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,12 +289,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cartoon-school-bus_99190" width="320" height="320"/>
-        <image name="dfd6ec01abc7e6dff0d680c5fefb5f66" width="470" height="608"/>
-        <image name="school-bus-clipart-MKTjjygiq" width="747" height="351"/>
         <image name="under-the-bus" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cbo-IZ-cOu"/>
+        <segue reference="iJR-kZ-o4C"/>
     </inferredMetricsTieBreakers>
 </document>
