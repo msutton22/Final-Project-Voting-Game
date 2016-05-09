@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4BB7FD1CB6C7B800339533 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BB7FC1CB6C7B800339533 /* QuestionViewController.swift */; };
+		3F4BB8001CB81C4100339533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BB7FE1CB81C4100339533 /* Main.storyboard */; };
+		3F5580251CBC2AFE00CC1E58 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5580241CBC2AFE00CC1E58 /* InstructionsViewController.swift */; };
 		3FBBE9421CB573FD00467C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9411CB573FD00467C88 /* AppDelegate.swift */; };
 		3FBBE9441CB573FD00467C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9431CB573FD00467C88 /* ViewController.swift */; };
-		3FBBE9471CB573FD00467C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBE9451CB573FD00467C88 /* Main.storyboard */; };
 		3FBBE9491CB573FD00467C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBE9481CB573FD00467C88 /* Assets.xcassets */; };
 		3FBBE94C1CB573FD00467C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBE94A1CB573FD00467C88 /* LaunchScreen.storyboard */; };
 		3FBBE9571CB573FD00467C88 /* The_VotingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9561CB573FD00467C88 /* The_VotingTests.swift */; };
 		3FBBE9621CB573FD00467C88 /* The_VotingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE9611CB573FD00467C88 /* The_VotingUITests.swift */; };
+		3FBBE9701CB6CF5E00467C88 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBE96F1CB6CF5E00467C88 /* Information.swift */; };
+		3FF5FC181CBEB1500075F9A5 /* game music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5FC171CBEB1500075F9A5 /* game music.mp3 */; };
+		3FF5FC261CC7ED5A0075F9A5 /* EndScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5FC251CC7ED5A0075F9A5 /* EndScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F4BB7FC1CB6C7B800339533 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		3F4BB7FF1CB81C4100339533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F5580241CBC2AFE00CC1E58 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		3FBBE93E1CB573FD00467C88 /* The Voting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Voting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBBE9411CB573FD00467C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBBE9431CB573FD00467C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3FBBE9461CB573FD00467C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FBBE9481CB573FD00467C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBBE94B1CB573FD00467C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBBE94D1CB573FD00467C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		3FBBE95D1CB573FD00467C88 /* The VotingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The VotingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBBE9611CB573FD00467C88 /* The_VotingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_VotingUITests.swift; sourceTree = "<group>"; };
 		3FBBE9631CB573FD00467C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBBE96F1CB6CF5E00467C88 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		3FF5FC171CBEB1500075F9A5 /* game music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "game music.mp3"; path = "../../../game music.mp3"; sourceTree = "<group>"; };
+		3FF5FC251CC7ED5A0075F9A5 /* EndScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				3FBBE9411CB573FD00467C88 /* AppDelegate.swift */,
+				3FBBE96F1CB6CF5E00467C88 /* Information.swift */,
 				3FBBE9431CB573FD00467C88 /* ViewController.swift */,
-				3FBBE9451CB573FD00467C88 /* Main.storyboard */,
+				3F4BB7FC1CB6C7B800339533 /* QuestionViewController.swift */,
+				3F5580241CBC2AFE00CC1E58 /* InstructionsViewController.swift */,
+				3FF5FC251CC7ED5A0075F9A5 /* EndScreenViewController.swift */,
 				3FBBE9481CB573FD00467C88 /* Assets.xcassets */,
+				3F4BB7FE1CB81C4100339533 /* Main.storyboard */,
 				3FBBE94A1CB573FD00467C88 /* LaunchScreen.storyboard */,
 				3FBBE94D1CB573FD00467C88 /* Info.plist */,
 			);
@@ -110,6 +124,7 @@
 		3FBBE9551CB573FD00467C88 /* The VotingTests */ = {
 			isa = PBXGroup;
 			children = (
+				3FF5FC171CBEB1500075F9A5 /* game music.mp3 */,
 				3FBBE9561CB573FD00467C88 /* The_VotingTests.swift */,
 				3FBBE9581CB573FD00467C88 /* Info.plist */,
 			);
@@ -231,9 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4BB8001CB81C4100339533 /* Main.storyboard in Resources */,
 				3FBBE94C1CB573FD00467C88 /* LaunchScreen.storyboard in Resources */,
 				3FBBE9491CB573FD00467C88 /* Assets.xcassets in Resources */,
-				3FBBE9471CB573FD00467C88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF5FC181CBEB1500075F9A5 /* game music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +276,10 @@
 			files = (
 				3FBBE9441CB573FD00467C88 /* ViewController.swift in Sources */,
 				3FBBE9421CB573FD00467C88 /* AppDelegate.swift in Sources */,
+				3FF5FC261CC7ED5A0075F9A5 /* EndScreenViewController.swift in Sources */,
+				3FBBE9701CB6CF5E00467C88 /* Information.swift in Sources */,
+				3F4BB7FD1CB6C7B800339533 /* QuestionViewController.swift in Sources */,
+				3F5580251CBC2AFE00CC1E58 /* InstructionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +315,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3FBBE9451CB573FD00467C88 /* Main.storyboard */ = {
+		3F4BB7FE1CB81C4100339533 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3FBBE9461CB573FD00467C88 /* Base */,
+				3F4BB7FF1CB81C4100339533 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -486,6 +506,7 @@
 				3FBBE9681CB573FD00467C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FBBE9691CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The VotingTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +515,7 @@
 				3FBBE96B1CB573FD00467C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FBBE96C1CB573FD00467C88 /* Build configuration list for PBXNativeTarget "The VotingUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +524,7 @@
 				3FBBE96E1CB573FD00467C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
