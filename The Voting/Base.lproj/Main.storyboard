@@ -73,7 +73,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WUa-I7-2A8">
-                                <rect key="frame" x="36" y="365" width="244" height="169"/>
+                                <rect key="frame" x="-20" y="383" width="428" height="345"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,7 +183,6 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p1NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="kGc-cK-wb1"/>
@@ -195,7 +194,6 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p2NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="NpZ-lG-vX4"/>
@@ -207,7 +205,6 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P4">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p4NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="p15-5S-j66"/>
@@ -219,7 +216,6 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P5">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p5NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="SF4-tc-nRD"/>
@@ -231,7 +227,6 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p3NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="puF-AH-8mm"/>
@@ -289,9 +284,12 @@
                                 <color key="shadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-1V-6wl">
+                                <rect key="frame" x="-24" y="333" width="448" height="293"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0a-ib-4OD">
-                                <rect key="frame" x="75" y="186" width="171" height="66"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <rect key="frame" x="11" y="180" width="299" height="139"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="START OVER">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -302,9 +300,6 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" identifier="EndToStart" id="iJR-kZ-o4C"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-1V-6wl">
-                                <rect key="frame" x="38" y="338" width="244" height="169"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -324,6 +319,6 @@
         <image name="NameLogo" width="721" height="513"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cbo-IZ-cOu"/>
+        <segue reference="iJR-kZ-o4C"/>
     </inferredMetricsTieBreakers>
 </document>
