@@ -14,8 +14,19 @@ class EndScreenViewController: UIViewController {
     
     var info = Information()
     
+    var player1Tapped = 0
+    var player2Tapped = 0
+    var player3Tapped = 0
+    var player4Tapped = 0
+    var player5Tapped = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        player1Tapped = info.player1won
+        player2Tapped = info.player2won
+        player3Tapped = info.player3won
+        player4Tapped = info.player4won
+        player5Tapped = info.player5won
         overallWinner()
     }
 
@@ -24,25 +35,38 @@ class EndScreenViewController: UIViewController {
         }
     
     func overallWinner() {
-        if (info.player1won * 4) > (info.player4won + info.player2won +  info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player1) was thrown under the bus the most!"
+        if player1Tapped > player2Tapped
+            && player1Tapped > player3Tapped
+            && player1Tapped > player4Tapped
+            && player1Tapped > player5Tapped {
+            endScreenLabel.text = "\(info.player1) was thrown under the bus!"
         }
-        else if (info.player2won * 4 ) > (info.player1won + info.player4won + info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player2) was thrown under the bus the most!"
+        else if  player2Tapped > player1Tapped
+            && player2Tapped > player3Tapped
+            && player2Tapped > player4Tapped
+            && player2Tapped > player5Tapped {
+            endScreenLabel.text = "\(info.player2) was thrown under the bus!"
         }
-        else if (info.player3won * 4) > (info.player1won + info.player2won + info.player4won + info.player5won) {
-            endScreenLabel.text = "\(info.player3) was thrown under the bus the most!"
+        else if player3Tapped > player2Tapped
+            && player3Tapped > player1Tapped
+            && player3Tapped > player4Tapped
+            && player3Tapped > player5Tapped {
+            endScreenLabel.text = "\(info.player3) was thrown under the bus!"
         }
-        else if (info.player4won * 4) > (info.player1won + info.player2won + info.player3won + info.player5won) {
-            endScreenLabel.text = "\(info.player4) was thrown under the bus the most!"
+        else if  player4Tapped > player2Tapped
+            && player4Tapped > player3Tapped
+            && player4Tapped > player1Tapped
+            && player4Tapped > player5Tapped {
+            endScreenLabel.text = "\(info.player4) was thrown under the bus!"
         }
-        else if (info.player5won * 4) > (info.player1won + info.player2won + info.player3won + info.player4won) {
-            endScreenLabel.text = "\(info.player5) was thrown under the bus the most!"
+        else if player5Tapped > player2Tapped
+            && player5Tapped > player3Tapped
+            && player5Tapped > player4Tapped
+            && player5Tapped > player1Tapped {
+            endScreenLabel.text = "\(info.player5) was thrown under the bus!"
         }
         else {
-            endScreenLabel.text = "Everyone was thrown under the bus together!"
+            endScreenLabel.text = "You were all thrown under the bus together!"
         }
-
-        
     }
 }
