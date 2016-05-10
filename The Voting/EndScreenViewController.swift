@@ -39,31 +39,31 @@ class EndScreenViewController: UIViewController {
             && player1Tapped > player3Tapped
             && player1Tapped > player4Tapped
             && player1Tapped > player5Tapped {
-            endScreenLabel.text = "\(info.player1) was thrown under the bus!"
+            endScreenLabel.text = "\(info.player1) was thrown under the bus the most!"
         }
         else if  player2Tapped > player1Tapped
             && player2Tapped > player3Tapped
             && player2Tapped > player4Tapped
             && player2Tapped > player5Tapped {
-            endScreenLabel.text = "\(info.player2) was thrown under the bus!"
+            endScreenLabel.text = "\(info.player2) was thrown under the bus the most!"
         }
         else if player3Tapped > player2Tapped
             && player3Tapped > player1Tapped
             && player3Tapped > player4Tapped
             && player3Tapped > player5Tapped {
-            endScreenLabel.text = "\(info.player3) was thrown under the bus!"
+            endScreenLabel.text = "\(info.player3) was thrown under the bus the most!"
         }
         else if  player4Tapped > player2Tapped
             && player4Tapped > player3Tapped
             && player4Tapped > player1Tapped
             && player4Tapped > player5Tapped {
-            endScreenLabel.text = "\(info.player4) was thrown under the bus!"
+            endScreenLabel.text = "\(info.player4) was thrown under the bus the most!"
         }
         else if player5Tapped > player2Tapped
             && player5Tapped > player3Tapped
             && player5Tapped > player4Tapped
             && player5Tapped > player1Tapped {
-            endScreenLabel.text = "\(info.player5) was thrown under the bus!"
+            endScreenLabel.text = "\(info.player5) was thrown under the bus the most!"
         }
         else {
             endScreenLabel.text = "You were all thrown under the bus together!"
