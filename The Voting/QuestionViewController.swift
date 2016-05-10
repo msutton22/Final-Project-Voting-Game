@@ -38,28 +38,28 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func p1NameButton(sender: AnyObject) {
-       master()
        player1Tapped += 1
+        master()
     }
     
     @IBAction func p2NameButton(sender: AnyObject) {
-       master()
        player2Tapped += 1
+        master()
     }
     
     @IBAction func p3NameButton(sender: AnyObject) {
-        master()
         player3Tapped += 1
+        master()
     }
 
     @IBAction func p4NameButton(sender: AnyObject) {
-       master()
        player4Tapped += 1
+        master()
     }
     
     @IBAction func p5NameButton(sender: AnyObject) {
-        master()
         player5Tapped += 1
+        master()
     }
     
     func master () {
@@ -119,58 +119,106 @@ class QuestionViewController: UIViewController {
     }
     
     func winner() {
-        if player1Tapped == player2Tapped && player2Tapped == player3Tapped && player2Tapped == player4Tapped && player2Tapped == player5Tapped
+        if player1Tapped == player2Tapped
+            && player1Tapped == player3Tapped
+            && player1Tapped == player4Tapped
+            && player1Tapped == player5Tapped
          {
             self.results("You all voted for different people. GET IT TOGETHER!")
         }
-        else if player1Tapped == player2Tapped && (player1Tapped * 3) > (player3Tapped + player4Tapped + player5Tapped) {
+        else if player1Tapped == player2Tapped
+            && player1Tapped > player3Tapped
+            && player1Tapped > player4Tapped
+            && player1Tapped > player5Tapped {
             results("Its a tie. No one was thrown under the bus")
         }
-        else if player1Tapped == player3Tapped && (player1Tapped * 3) > (player2Tapped + player4Tapped + player5Tapped) {
+        else if player1Tapped == player3Tapped
+            && player1Tapped > player2Tapped
+            && player1Tapped > player4Tapped
+            && player1Tapped > player5Tapped {
                 results("Its a tie. No one was thrown under the bus")
         }
-        else if player1Tapped == player4Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player5Tapped) {
+        else if player1Tapped == player4Tapped
+            && player1Tapped > player3Tapped
+            && player1Tapped > player2Tapped
+            && player1Tapped > player5Tapped {
                 results("Its a tie. No one was thrown under the bus")
         }
-        else if player1Tapped == player5Tapped && (player1Tapped * 3) > (player2Tapped + player3Tapped + player4Tapped){
+        else if player1Tapped == player5Tapped
+            && player1Tapped > player3Tapped
+            && player1Tapped > player4Tapped
+            && player1Tapped > player2Tapped {
             results("Its a tie. No one was thrown under the bus")
         }
-        else if player2Tapped == player3Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player5Tapped) {
+        else if player2Tapped == player3Tapped
+            && player3Tapped > player1Tapped
+            && player3Tapped > player4Tapped
+            && player3Tapped > player5Tapped {
             results("Its a tie. No one was thrown under the bus")
         }
-        else if player2Tapped == player4Tapped && (player2Tapped * 3) > (player1Tapped + player3Tapped + player5Tapped) {
+        else if player2Tapped == player4Tapped
+            && player2Tapped > player1Tapped
+            && player2Tapped > player3Tapped
+            && player2Tapped > player5Tapped {
             results("Its a tie. No one was thrown under the bus")
         }
-        else if player2Tapped == player5Tapped && (player2Tapped * 3) > (player1Tapped + player4Tapped + player3Tapped) {
+        else if player2Tapped == player5Tapped
+            && player2Tapped > player1Tapped
+            && player2Tapped > player4Tapped
+            && player2Tapped > player3Tapped {
             results("Its a tie. No one was thrown under the bus")
         }
-        else if player3Tapped == player4Tapped && (player3Tapped * 3) > (player1Tapped + player2Tapped + player5Tapped) {
+        else if player3Tapped == player4Tapped
+            && player3Tapped > player1Tapped
+            && player3Tapped > player2Tapped
+            && player3Tapped > player5Tapped {
             results("Its a tie. No one was thrown under the bus")
         }
-        else if player3Tapped == player5Tapped && (player3Tapped * 3) > (player1Tapped + player4Tapped + player2Tapped) {
+        else if player3Tapped == player5Tapped
+            && player3Tapped > player1Tapped
+            && player3Tapped > player4Tapped
+            && player3Tapped > player2Tapped {
             results("Its a tie. No one was thrown under the bus")
         }
-        else if player4Tapped == player5Tapped && (player4Tapped * 3) > (player1Tapped + player2Tapped + player3Tapped) {
+        else if player4Tapped == player5Tapped
+            && player4Tapped > player1Tapped
+            && player4Tapped > player2Tapped
+            && player4Tapped > player3Tapped {
                 results("Its a tie. No one was thrown under the bus")
         }
-       else if (player1Tapped * 4) > (player2Tapped + player3Tapped + player4Tapped + player5Tapped)
+        else if player1Tapped > player2Tapped
+            && player1Tapped > player3Tapped
+            && player1Tapped > player4Tapped
+            && player1Tapped > player5Tapped
         {
             info.player1won += 1
             results("\(info.player1) was thrown under the bus")
         }
-        else if (player2Tapped * 4) > (player1Tapped + player3Tapped + player4Tapped + player5Tapped) {
+        else if player2Tapped > player1Tapped
+            && player2Tapped > player3Tapped
+            && player2Tapped > player4Tapped
+            && player2Tapped > player5Tapped {
             info.player2won += 1
             results("\(info.player2) was thrown under the bus")
         }
-        else if (player3Tapped * 4) > (player2Tapped + player1Tapped + player4Tapped + player5Tapped) {
+        else if player3Tapped > player2Tapped
+            && player3Tapped > player1Tapped
+            && player3Tapped > player4Tapped
+            && player3Tapped > player5Tapped {
             info.player3won += 1
             results("\(info.player3) was thrown under the bus")
         }
-        else if (player4Tapped * 4) > (player1Tapped & player2Tapped & player3Tapped & player5Tapped) {
+        else if player4Tapped > player2Tapped
+            && player4Tapped > player3Tapped
+            && player4Tapped > player1Tapped
+            && player4Tapped > player5Tapped {
             info.player4won += 1
             results("\(info.player4) was thrown under the bus")
         }
-        else if (player5Tapped * 4) > (player1Tapped + player2Tapped + player2Tapped + player4Tapped) {
+        else if player5Tapped > player2Tapped
+            && player5Tapped > player3Tapped
+            && player5Tapped > player4Tapped
+            && player5Tapped > player1Tapped {
             info.player5won += 1
             results("\(info.player5) was thrown under the bus")
         }
