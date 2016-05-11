@@ -41,7 +41,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-FL-evJ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-FL-evJ">
                                 <rect key="frame" x="36" y="327" width="249" height="30"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <size key="titleShadowOffset" width="5" height="3"/>
@@ -79,6 +79,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wjj-vc-AQx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0WF-Pm-p9T"/>
+                            <constraint firstItem="WUa-I7-2A8" firstAttribute="top" secondItem="bBJ-FL-evJ" secondAttribute="bottom" constant="8" id="1tX-kR-rAy"/>
                             <constraint firstItem="ftP-IA-0Pj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4HU-O3-KKj"/>
                             <constraint firstItem="VZa-Ad-QKp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ty-C3-qCM"/>
                             <constraint firstItem="dgt-8x-gEN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Xk-U4-oas"/>
@@ -288,7 +289,7 @@
                                 <color key="shadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0a-ib-4OD">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0a-ib-4OD">
                                 <rect key="frame" x="21" y="234" width="279" height="67"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
                                 <size key="titleShadowOffset" width="5" height="3"/>
@@ -309,6 +310,7 @@
                         <constraints>
                             <constraint firstItem="TvT-3x-Obv" firstAttribute="leading" secondItem="GZm-yh-DDp" secondAttribute="leadingMargin" constant="2" id="2SP-KM-2Na"/>
                             <constraint firstItem="V0a-ib-4OD" firstAttribute="centerX" secondItem="GZm-yh-DDp" secondAttribute="centerX" id="3o2-ur-aLk"/>
+                            <constraint firstItem="TvT-3x-Obv" firstAttribute="top" secondItem="V0a-ib-4OD" secondAttribute="bottom" constant="62" id="Asd-Ji-ezZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TvT-3x-Obv" secondAttribute="trailing" constant="3" id="NZm-f9-QRP"/>
                             <constraint firstItem="LU1-Jp-X4t" firstAttribute="centerX" secondItem="GZm-yh-DDp" secondAttribute="centerX" id="b8r-Lz-m1L"/>
                             <constraint firstItem="Hc1-UQ-XMp" firstAttribute="top" secondItem="TvT-3x-Obv" secondAttribute="bottom" constant="20" id="mox-kS-D8v"/>
