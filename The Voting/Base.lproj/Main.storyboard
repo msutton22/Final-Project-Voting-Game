@@ -133,7 +133,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
                                 <rect key="frame" x="0.0" y="78" width="320" height="382"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">CREATED BY BITS PLEASE           Instructions:                       Enter the names of 5 people. Next you will be presented a question in which all of you will have to choose among your friends who best fits the scenario given. After each player has voted the results will appear. </string>
@@ -159,9 +159,11 @@
                             <constraint firstItem="7v9-au-TO5" firstAttribute="top" secondItem="Zqg-sE-2Z5" secondAttribute="bottom" constant="10" id="ALP-ay-eXi"/>
                             <constraint firstItem="3cn-Gy-427" firstAttribute="top" secondItem="7v9-au-TO5" secondAttribute="bottom" constant="25" id="HZf-ji-2BS"/>
                             <constraint firstItem="Zqg-sE-2Z5" firstAttribute="centerX" secondItem="Mnm-eB-Luq" secondAttribute="centerX" id="UUg-q5-Yn9"/>
+                            <constraint firstItem="Zqg-sE-2Z5" firstAttribute="leading" secondItem="Mnm-eB-Luq" secondAttribute="leadingMargin" constant="-20" id="d8f-bc-YaI"/>
                             <constraint firstItem="Zqg-sE-2Z5" firstAttribute="top" secondItem="eeF-pY-7VX" secondAttribute="bottom" constant="50" id="frC-A0-pct"/>
                             <constraint firstItem="7v9-au-TO5" firstAttribute="centerX" secondItem="Mnm-eB-Luq" secondAttribute="centerX" id="qd1-sk-kjX"/>
                             <constraint firstItem="7v9-au-TO5" firstAttribute="top" secondItem="Zqg-sE-2Z5" secondAttribute="bottom" constant="10" id="tUl-Df-Dgq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zqg-sE-2Z5" secondAttribute="trailing" constant="-20" id="ztC-5C-Baz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dVb-ne-wHV"/>
@@ -257,9 +259,13 @@
                             <constraint firstItem="eTR-bM-A2X" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="6gA-dd-c4U"/>
                             <constraint firstItem="daa-Hb-pch" firstAttribute="top" secondItem="cdu-s9-FrE" secondAttribute="bottom" constant="30" id="91I-3P-MCy"/>
                             <constraint firstItem="6Ak-ir-lc3" firstAttribute="top" secondItem="2Bb-B9-jcq" secondAttribute="bottom" constant="30" id="Buu-qt-v5B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eTR-bM-A2X" secondAttribute="trailing" constant="4" id="CU1-wP-0tC"/>
+                            <constraint firstItem="XVq-qD-2Lo" firstAttribute="leading" secondItem="WWr-h1-Sgc" secondAttribute="leadingMargin" constant="4" id="DmZ-Gj-I4o"/>
+                            <constraint firstItem="eTR-bM-A2X" firstAttribute="leading" secondItem="WWr-h1-Sgc" secondAttribute="leadingMargin" constant="4" id="DzC-Qq-KNP"/>
                             <constraint firstItem="JF5-kP-hyH" firstAttribute="top" secondItem="XVq-qD-2Lo" secondAttribute="bottom" constant="26" id="FyJ-Ww-nqg"/>
                             <constraint firstItem="daa-Hb-pch" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="JiF-pA-pTz"/>
                             <constraint firstItem="JF5-kP-hyH" firstAttribute="top" secondItem="XVq-qD-2Lo" secondAttribute="bottom" constant="26" id="LTZ-R8-fyg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XVq-qD-2Lo" secondAttribute="trailing" constant="4" id="LxQ-b0-GVM"/>
                             <constraint firstItem="XVq-qD-2Lo" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="PND-x3-Cip"/>
                             <constraint firstItem="XVq-qD-2Lo" firstAttribute="top" secondItem="eTR-bM-A2X" secondAttribute="bottom" constant="36" id="ZgW-49-hhM"/>
                             <constraint firstItem="2Bb-B9-jcq" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="bYv-AI-MRS"/>
@@ -333,6 +339,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LU1-Jp-X4t" firstAttribute="top" secondItem="NrE-v9-8zE" secondAttribute="bottom" constant="42" id="02J-6C-wlU"/>
+                            <constraint firstItem="LU1-Jp-X4t" firstAttribute="leading" secondItem="GZm-yh-DDp" secondAttribute="leadingMargin" constant="4" id="4gL-Gx-AIx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LU1-Jp-X4t" secondAttribute="trailing" constant="4" id="6KA-Gj-q1b"/>
                             <constraint firstItem="TvT-3x-Obv" firstAttribute="top" secondItem="V0a-ib-4OD" secondAttribute="bottom" constant="19" id="B25-7x-9T9"/>
                             <constraint firstItem="Hc1-UQ-XMp" firstAttribute="top" secondItem="TvT-3x-Obv" secondAttribute="bottom" constant="33" id="FBb-6N-bCF"/>
                             <constraint firstItem="V0a-ib-4OD" firstAttribute="centerX" secondItem="GZm-yh-DDp" secondAttribute="centerX" id="ZNj-nr-zBg"/>
@@ -356,6 +364,6 @@
         <image name="NameLogo" width="721" height="513"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJR-kZ-o4C"/>
+        <segue reference="cbo-IZ-cOu"/>
     </inferredMetricsTieBreakers>
 </document>
