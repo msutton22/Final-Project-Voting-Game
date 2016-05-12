@@ -150,8 +150,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zqg-sE-2Z5" firstAttribute="centerX" secondItem="Mnm-eB-Luq" secondAttribute="centerX" id="US9-i2-pU5"/>
-                            <constraint firstItem="7v9-au-TO5" firstAttribute="centerX" secondItem="Mnm-eB-Luq" secondAttribute="centerX" id="q9j-Gp-fXs"/>
+                            <constraint firstItem="7v9-au-TO5" firstAttribute="top" secondItem="Zqg-sE-2Z5" secondAttribute="bottom" constant="10" id="ALP-ay-eXi"/>
+                            <constraint firstItem="3cn-Gy-427" firstAttribute="top" secondItem="7v9-au-TO5" secondAttribute="bottom" constant="25" id="HZf-ji-2BS"/>
+                            <constraint firstItem="Zqg-sE-2Z5" firstAttribute="top" secondItem="eeF-pY-7VX" secondAttribute="bottom" constant="50" id="frC-A0-pct"/>
+                            <constraint firstItem="7v9-au-TO5" firstAttribute="top" secondItem="Zqg-sE-2Z5" secondAttribute="bottom" constant="10" id="tUl-Df-Dgq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dVb-ne-wHV"/>
@@ -339,6 +341,6 @@
         <image name="NameLogo" width="721" height="513"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJR-kZ-o4C"/>
+        <segue reference="cbo-IZ-cOu"/>
     </inferredMetricsTieBreakers>
 </document>
