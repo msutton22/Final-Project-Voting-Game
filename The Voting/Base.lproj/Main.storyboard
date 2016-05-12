@@ -18,44 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZa-Ad-QKp">
-                                <rect key="frame" x="97" y="47" width="126" height="30"/>
+                                <rect key="frame" x="97" y="41" width="126" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 3's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgt-8x-gEN">
-                                <rect key="frame" x="97" y="136" width="126" height="30"/>
+                                <rect key="frame" x="97" y="127" width="126" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBk-nQ-H1S">
-                                <rect key="frame" x="97" y="93" width="126" height="30"/>
+                                <rect key="frame" x="97" y="84" width="126" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 5's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjj-vc-AQx">
-                                <rect key="frame" x="97" y="222" width="126" height="30"/>
+                                <rect key="frame" x="97" y="213" width="126" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-FL-evJ">
-                                <rect key="frame" x="36" y="327" width="249" height="30"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <size key="titleShadowOffset" width="5" height="3"/>
-                                <state key="normal" title="ABOUT THIS GAME">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="aboutThisGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qeO-yf-VWb"/>
-                                    <segue destination="bls-1Y-Cff" kind="modal" identifier="toInstruct" id="LhL-bQ-rDe"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykL-TT-Vfr">
-                                <rect key="frame" x="115" y="274" width="91" height="30"/>
+                                <rect key="frame" x="115" y="269" width="91" height="30"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="NEXT">
@@ -67,45 +54,51 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 4's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftP-IA-0Pj">
-                                <rect key="frame" x="97" y="179" width="126" height="30"/>
+                                <rect key="frame" x="97" y="170" width="126" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WUa-I7-2A8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WUa-I7-2A8">
                                 <rect key="frame" x="23" y="365" width="275" height="185"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="185" id="C9p-bp-KuN"/>
                                     <constraint firstAttribute="width" constant="275" id="qfn-hN-c3f"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-FL-evJ">
+                                <rect key="frame" x="36" y="315" width="249" height="30"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <size key="titleShadowOffset" width="5" height="3"/>
+                                <state key="normal" title="ABOUT THIS GAME">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutThisGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qeO-yf-VWb"/>
+                                    <segue destination="bls-1Y-Cff" kind="modal" identifier="toInstruct" id="LhL-bQ-rDe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wjj-vc-AQx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Rf-sM-rIm"/>
-                            <constraint firstItem="WUa-I7-2A8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ym-ge-cNN"/>
-                            <constraint firstItem="ftP-IA-0Pj" firstAttribute="top" secondItem="dgt-8x-gEN" secondAttribute="bottom" constant="16" id="719-4j-pgl"/>
-                            <constraint firstItem="bBJ-FL-evJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7at-LY-6dy"/>
-                            <constraint firstItem="VZa-Ad-QKp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BqM-vZ-i7Y"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WUa-I7-2A8" secondAttribute="trailing" constant="2" id="FQA-V5-qO5"/>
-                            <constraint firstItem="dgt-8x-gEN" firstAttribute="top" secondItem="qBk-nQ-H1S" secondAttribute="bottom" constant="16" id="Loc-bo-3fc"/>
-                            <constraint firstItem="wjj-vc-AQx" firstAttribute="top" secondItem="ftP-IA-0Pj" secondAttribute="bottom" constant="16" id="OEr-DW-PVa"/>
-                            <constraint firstItem="qBk-nQ-H1S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sfj-CN-FlC"/>
-                            <constraint firstItem="qBk-nQ-H1S" firstAttribute="top" secondItem="VZa-Ad-QKp" secondAttribute="bottom" constant="16" id="TBG-kE-GP7"/>
-                            <constraint firstItem="wjj-vc-AQx" firstAttribute="top" secondItem="ftP-IA-0Pj" secondAttribute="bottom" constant="16" id="TUt-Q7-Iug"/>
-                            <constraint firstItem="bBJ-FL-evJ" firstAttribute="top" secondItem="ykL-TT-Vfr" secondAttribute="bottom" constant="20" id="WFB-fJ-bW1"/>
-                            <constraint firstItem="ykL-TT-Vfr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WSt-OS-iXe"/>
-                            <constraint firstItem="ftP-IA-0Pj" firstAttribute="top" secondItem="dgt-8x-gEN" secondAttribute="bottom" constant="16" id="Ymk-Va-TrQ"/>
-                            <constraint firstItem="gZY-GG-g9c" firstAttribute="top" secondItem="WUa-I7-2A8" secondAttribute="bottom" constant="18" id="ajn-Zr-mOQ"/>
-                            <constraint firstItem="VZa-Ad-QKp" firstAttribute="top" secondItem="q6F-mD-6Gh" secondAttribute="bottom" constant="20" id="iVx-co-7ux"/>
-                            <constraint firstItem="dgt-8x-gEN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2k-Af-2DJ"/>
-                            <constraint firstItem="dgt-8x-gEN" firstAttribute="top" secondItem="qBk-nQ-H1S" secondAttribute="bottom" constant="16" id="p4h-jU-ohg"/>
-                            <constraint firstItem="qBk-nQ-H1S" firstAttribute="top" secondItem="VZa-Ad-QKp" secondAttribute="bottom" constant="16" id="s2J-eM-E13"/>
-                            <constraint firstItem="WUa-I7-2A8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="uN0-cW-9cc"/>
-                            <constraint firstItem="WUa-I7-2A8" firstAttribute="top" secondItem="bBJ-FL-evJ" secondAttribute="bottom" constant="8" id="wBN-Mp-UAs"/>
-                            <constraint firstItem="ftP-IA-0Pj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yVm-2X-uC7"/>
-                            <constraint firstItem="ykL-TT-Vfr" firstAttribute="top" secondItem="wjj-vc-AQx" secondAttribute="bottom" constant="20" id="ycR-v5-DGG"/>
-                            <constraint firstItem="ykL-TT-Vfr" firstAttribute="top" secondItem="wjj-vc-AQx" secondAttribute="bottom" constant="20" id="yht-au-beR"/>
+                            <constraint firstItem="VZa-Ad-QKp" firstAttribute="top" secondItem="q6F-mD-6Gh" secondAttribute="bottom" constant="21" id="03h-dK-c6v"/>
+                            <constraint firstItem="VZa-Ad-QKp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1bB-Eq-Oip"/>
+                            <constraint firstItem="WUa-I7-2A8" firstAttribute="top" secondItem="bBJ-FL-evJ" secondAttribute="bottom" constant="20" id="7L9-KB-KJd"/>
+                            <constraint firstItem="ftP-IA-0Pj" firstAttribute="top" secondItem="dgt-8x-gEN" secondAttribute="bottom" constant="13" id="7Om-AP-zcl"/>
+                            <constraint firstItem="gZY-GG-g9c" firstAttribute="top" secondItem="WUa-I7-2A8" secondAttribute="bottom" constant="18" id="9Xd-fO-Mi6"/>
+                            <constraint firstItem="ftP-IA-0Pj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H9k-Dw-Dd2"/>
+                            <constraint firstItem="qBk-nQ-H1S" firstAttribute="top" secondItem="VZa-Ad-QKp" secondAttribute="bottom" constant="13" id="JTI-pj-fz2"/>
+                            <constraint firstItem="wjj-vc-AQx" firstAttribute="top" secondItem="ftP-IA-0Pj" secondAttribute="bottom" constant="13" id="PMo-jb-R5X"/>
+                            <constraint firstItem="WUa-I7-2A8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RRR-w8-yGo"/>
+                            <constraint firstItem="qBk-nQ-H1S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YYd-SX-TEv"/>
+                            <constraint firstItem="wjj-vc-AQx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YzD-Ez-af9"/>
+                            <constraint firstItem="ykL-TT-Vfr" firstAttribute="top" secondItem="wjj-vc-AQx" secondAttribute="bottom" constant="26" id="b1R-Pd-H1j"/>
+                            <constraint firstItem="ykL-TT-Vfr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixo-dT-PkF"/>
+                            <constraint firstItem="bBJ-FL-evJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="krp-zg-n2D"/>
+                            <constraint firstItem="dgt-8x-gEN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l4U-VZ-nMY"/>
+                            <constraint firstItem="dgt-8x-gEN" firstAttribute="top" secondItem="qBk-nQ-H1S" secondAttribute="bottom" constant="13" id="tbQ-K0-IAb"/>
+                            <constraint firstItem="bBJ-FL-evJ" firstAttribute="top" secondItem="ykL-TT-Vfr" secondAttribute="bottom" constant="16" id="xpO-Gf-K14"/>
                         </constraints>
                     </view>
                     <connections>
@@ -196,6 +189,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p1NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="kGc-cK-wb1"/>
@@ -207,6 +201,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p2NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="NpZ-lG-vX4"/>
@@ -218,6 +213,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P4">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p4NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="p15-5S-j66"/>
@@ -229,6 +225,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P5">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p5NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="SF4-tc-nRD"/>
@@ -240,6 +237,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p3NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="puF-AH-8mm"/>
