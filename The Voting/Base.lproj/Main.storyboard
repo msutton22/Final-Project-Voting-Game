@@ -196,6 +196,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p1NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="kGc-cK-wb1"/>
@@ -207,6 +208,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p2NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="NpZ-lG-vX4"/>
@@ -218,6 +220,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P4">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p4NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="p15-5S-j66"/>
@@ -229,6 +232,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P5">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p5NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="SF4-tc-nRD"/>
@@ -240,6 +244,7 @@
                                 <size key="titleShadowOffset" width="5" height="3"/>
                                 <state key="normal" title="P3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="p3NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="puF-AH-8mm"/>
