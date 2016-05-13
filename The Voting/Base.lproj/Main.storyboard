@@ -127,9 +127,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-sE-2Z5">
-                                <rect key="frame" x="0.0" y="78" width="320" height="382"/>
+                                <rect key="frame" x="0.0" y="78" width="320" height="410"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">CREATED BY BITS PLEASE           Instructions:                       Enter the names of 5 people. Next you will be presented a question in which all of you will have to choose among your friends who best fits the scenario given. After each player has voted the results will appear. </string>
+                                <string key="text">CREATED BY BITS PLEASE           Instructions:                       Enter the names of 5 people. Next you will be presented a question in which all of you will have to choose among your friends who best fits the scenario given, then pass the phone to the next player. After each player has voted the results will appear. </string>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -177,7 +177,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="QUESTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTR-bM-A2X">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="QUESTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTR-bM-A2X">
                                 <rect key="frame" x="25" y="41" width="271" height="67"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -231,7 +231,7 @@
                                     <action selector="p3NameButton:" destination="LQI-02-t2M" eventType="touchUpInside" id="puF-AH-8mm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="P1's turn choose a friend and pass on to the next player " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVq-qD-2Lo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="P1's turn choose a friend and pass on to the next player " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVq-qD-2Lo">
                                 <rect key="frame" x="19" y="132" width="283" height="72"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,27 +253,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JF5-kP-hyH" firstAttribute="top" secondItem="XVq-qD-2Lo" secondAttribute="bottom" constant="16" id="28v-Zm-GzK"/>
-                            <constraint firstItem="6Ak-ir-lc3" firstAttribute="top" secondItem="2Bb-B9-jcq" secondAttribute="bottom" constant="30" id="2XB-ea-OzD"/>
                             <constraint firstItem="2Bb-B9-jcq" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="2fV-VG-K4C"/>
                             <constraint firstItem="6Ak-ir-lc3" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="79c-JN-0ho"/>
-                            <constraint firstItem="2Bb-B9-jcq" firstAttribute="top" secondItem="daa-Hb-pch" secondAttribute="bottom" constant="30" id="7ch-gL-ggt"/>
-                            <constraint firstItem="Y3g-8E-Tf0" firstAttribute="top" secondItem="6Ak-ir-lc3" secondAttribute="bottom" constant="45" id="C7h-xh-BRE"/>
                             <constraint firstItem="JF5-kP-hyH" firstAttribute="top" secondItem="XVq-qD-2Lo" secondAttribute="bottom" constant="16" id="CUo-ad-yPH"/>
-                            <constraint firstItem="XVq-qD-2Lo" firstAttribute="top" secondItem="eTR-bM-A2X" secondAttribute="bottom" constant="24" id="GdN-5n-VLz"/>
+                            <constraint firstItem="Y3g-8E-Tf0" firstAttribute="top" secondItem="6Ak-ir-lc3" secondAttribute="bottom" constant="45" id="EwZ-dC-0PZ" userLabel="Bottom Layout Guide.top &gt;= Player5 Button.bottom + 5"/>
                             <constraint firstItem="JF5-kP-hyH" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="HRX-HK-UKM"/>
                             <constraint firstItem="eTR-bM-A2X" firstAttribute="leading" secondItem="WWr-h1-Sgc" secondAttribute="leadingMargin" constant="4" id="Jwj-P9-YEf"/>
-                            <constraint firstItem="daa-Hb-pch" firstAttribute="top" secondItem="cdu-s9-FrE" secondAttribute="bottom" constant="30" id="KmX-cR-hNT"/>
                             <constraint firstItem="XVq-qD-2Lo" firstAttribute="leading" secondItem="WWr-h1-Sgc" secondAttribute="leadingMargin" constant="4" id="LUe-A6-ykp"/>
-                            <constraint firstItem="2Bb-B9-jcq" firstAttribute="top" secondItem="daa-Hb-pch" secondAttribute="bottom" constant="30" id="PTP-p4-Bgo"/>
-                            <constraint firstItem="XVq-qD-2Lo" firstAttribute="top" secondItem="eTR-bM-A2X" secondAttribute="bottom" constant="24" id="VPB-wX-6WT"/>
+                            <constraint firstItem="2Bb-B9-jcq" firstAttribute="top" secondItem="daa-Hb-pch" secondAttribute="bottom" constant="25" id="Pwe-8n-go5"/>
+                            <constraint firstItem="XVq-qD-2Lo" firstAttribute="top" secondItem="eTR-bM-A2X" secondAttribute="bottom" constant="24" id="VPB-wX-6WT" userLabel="Player Turn Identifier Label.top &gt;= Question Label.bottom + 10"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eTR-bM-A2X" secondAttribute="trailing" constant="4" id="WIn-hh-clQ"/>
+                            <constraint firstItem="6Ak-ir-lc3" firstAttribute="top" secondItem="2Bb-B9-jcq" secondAttribute="bottom" constant="25" id="ajH-et-ere"/>
                             <constraint firstItem="cdu-s9-FrE" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="dCT-nn-4Fh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XVq-qD-2Lo" secondAttribute="trailing" constant="4" id="ffE-gX-SBW"/>
-                            <constraint firstItem="cdu-s9-FrE" firstAttribute="top" secondItem="JF5-kP-hyH" secondAttribute="bottom" constant="30" id="gkK-zG-Abu"/>
-                            <constraint firstItem="daa-Hb-pch" firstAttribute="top" secondItem="cdu-s9-FrE" secondAttribute="bottom" constant="30" id="jmb-hO-H3K"/>
                             <constraint firstItem="eTR-bM-A2X" firstAttribute="top" secondItem="eHg-ae-aaT" secondAttribute="bottom" constant="21" id="oXM-88-7ah"/>
+                            <constraint firstItem="daa-Hb-pch" firstAttribute="top" secondItem="cdu-s9-FrE" secondAttribute="bottom" constant="25" id="pcs-kK-iZg"/>
                             <constraint firstItem="daa-Hb-pch" firstAttribute="centerX" secondItem="WWr-h1-Sgc" secondAttribute="centerX" id="rwV-0s-noJ"/>
-                            <constraint firstItem="6Ak-ir-lc3" firstAttribute="top" secondItem="2Bb-B9-jcq" secondAttribute="bottom" constant="30" id="sZ0-2e-v8X"/>
+                            <constraint firstItem="cdu-s9-FrE" firstAttribute="top" secondItem="JF5-kP-hyH" secondAttribute="bottom" constant="25" id="xgp-mZ-Hly"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CvQ-fZ-qOR"/>
