@@ -70,24 +70,23 @@ class QuestionViewController: UIViewController {
     
     func playerColor() {
         if playerTurn == 1 {
-            view.backgroundColor = UIColor.redColor()
+            view.backgroundColor = UIColor(red: 234/255, green: 53/255, blue: 53/255, alpha: 1.0)
             playerTurnIdentifierLabel.text = "It's \(info.player1)'s turn! Choose a friend, then pass on to the next player."
         }
         else if playerTurn == 2 {
-            view.backgroundColor = UIColor.blueColor()
+            view.backgroundColor = UIColor(red: 53.0/255.0, green: 155.0/255.0, blue: 220.0/255.0, alpha: 1.0)
             playerTurnIdentifierLabel.text = "It's \(info.player2)'s turn! Choose a friend, then pass on to the next player."
         }
         else if playerTurn == 3 {
-            view.backgroundColor = UIColor.magentaColor()
+            view.backgroundColor = UIColor(red: 226/255, green: 72/255, blue: 193/255, alpha: 1.0);
             playerTurnIdentifierLabel.text = "It's \(info.player3)'s turn! Choose a friend, then pass on to the next player."
         }
         else if playerTurn == 4 {
-            view.backgroundColor = UIColor.greenColor()
+            view.backgroundColor = UIColor(red: 85/255, green: 249/255, blue: 79/255, alpha: 1.0)
             playerTurnIdentifierLabel.text = "It's \(info.player4)'s turn! Choose a friend, then pass on to the next player."
         }
         else if playerTurn == 5 {
-            view.backgroundColor = UIColor.purpleColor()
-            playerTurnIdentifierLabel.text = "It's \(info.player5)'s turn! Choose a friend, then pass on to the next player."
+            view.backgroundColor = UIColor(red: 164/255, green: 88/255, blue: 183/255, alpha: 1.0);            playerTurnIdentifierLabel.text = "It's \(info.player5)'s turn! Choose a friend, then pass on to the next player."
         }
     }
   
