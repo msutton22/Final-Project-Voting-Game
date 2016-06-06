@@ -51,7 +51,7 @@ class Information: NSObject {
                      "be caught sleeping on the job",
                      "die first in a zombie apocolypse",
                      "have an emotional breakdown in public",
-                     "drop their phone in a the toilet",
+                     "drop their phone in a toilet",
                      "actually survive the hunger games",
                      "know every song from One Direction",
                      "lose a winning loto ticket",
